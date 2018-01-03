@@ -1,0 +1,74 @@
+
+# Site settings
+
+title: JWO2018k # kurssitoteutuksen tunnus
+baseurl: "/jwo2018k"
+
+kurssin_nimi: Johdatus web-ohjelmointiin
+kurssin_ajankohta: "Kevät 2018"
+
+discussion_address: "https://moodle2.tut.fi/mod/forum/discuss.php?d="
+upload_address: "https://moodle2.tut.fi/mod/vpl/view.php?id="
+
+# TODO: päivitä
+review_address: "https://moodle2.tut.fi/mod/url/view.php?id=314337"
+
+# Build settings
+
+markdown: kramdown
+
+collections:
+
+  osa1:
+    output: true
+    permalink: /:collection/:path/
+    nimi: Osa 1
+    otsikko: "HTML, CSS I"
+    julkaisu: 5.1.2018
+
+  osa2:
+    output: true
+    permalink: /:collection/:path/
+    nimi: Osa 2
+    otsikko: "CSS II, JavaScript"
+    julkaisu: 12.1.2018
+
+  osa3:
+    output: true
+    permalink: /:collection/:path/
+    nimi: Osa 3
+    # otsikko: "PHP I"
+    otsikko: ""
+    julkaisu: 19.1.2018
+
+  osa4:
+    output: true
+    permalink: /:collection/:path/
+    nimi: Osa 4
+    # otsikko: "PHP II"
+    otsikko: ""
+    julkaisu: 26.1.2018
+
+  osa5:
+    output: true
+    permalink: /:collection/:path/
+    nimi: Osa 5
+    # otsikko: "Soveltavat tehtävät I"
+    otsikko: ""
+    julkaisu: 2.2.2018
+
+  osa6:
+    output: true
+    permalink: /:collection/:path/
+    nimi: Osa 6
+    # otsikko: "Soveltavat tehtävät II"
+    otsikko: ""
+    julkaisu: 9.2.2018
+
+  osa7:
+    output: true
+    permalink: /:collection/:path/
+    nimi: Osa 7
+    # otsikko: "Soveltavat tehtävät III"
+    otsikko: ""
+    julkaisu: 16.2.2018

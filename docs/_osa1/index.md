@@ -2,7 +2,8 @@
 layout: collection_index
 permalink: /:collection/index.html
 kesken: 1
-modified_at: 3.1.2018
+modified_at: 5.1.2018
+julkaisu: 8.1.2018
 ---
 
 JWO2018k / Osa 1

@@ -2,13 +2,21 @@
 layout: site_index
 ---
 
-JWO2018k
+[Web-sovellusten ympäristöstä ja toteutustekniikoista](about)
+
+Kurssitoteutus on jaettu seitsemään osaan, joista kunkin ytimen muodostaa
+tiettyyn teemaan keskittyvä tehtäväsarja:
+
+{% include collections_list.md %}
+
+[Suorituksen arvostelu](arvostelu)   
+[Edellinen kurssitoteutus (2016/17)](https://timedu.github.io/jwo2017k/)
+
 
 ~~~
 Sivusto täydentyy ja päivittyy kurssitoteutuksen edetessä
 ~~~
 
-Edellinen kurssitoteutus: [JWO2017k](https://timedu.github.io/jwo2017k/)
 
 {% comment %}
 

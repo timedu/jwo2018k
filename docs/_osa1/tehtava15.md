@@ -1,18 +1,11 @@
 ---
 layout: exercise_page
 title: "Tehtävä 1.5: Suosikit (1p)"
-exercise_template_name: # W1E05.Suosikit
-exercise_discussion_id:
-exercise_upload_id:
+exercise_template_name: W1E05.Suosikit
+exercise_discussion_id: 91529
+exercise_upload_id: 364643
 modified_at: 8.1.2018
-kesken: 1
-julkaisu: 8.1.2018
-no_review: 1
 ---
-
-Tehtävä 1.5
-
-{% comment %}
 
 Tehtäväpohjan tiedostossa `index.html` on lista suosikkeja[^1]. Kopioi tiedoston käyttöön [edellisessä tehtävässä](../tehtava14) laatimasi tyylitiedosto ja täydennä tyylistöä siten, että `index.html` näyttää selaimessa alla olevan kuvan mukaiselta. Laadi täydentävät tyylit tiedostossa `index.html` olevan `style`-elementin sisällöksi.
 
@@ -39,4 +32,4 @@ Creative Commons BY-NC-SA.
 
 [weso]: http://web-selainohjelmointi.github.io/
 
-{% endcomment %}
+Alaviitteet

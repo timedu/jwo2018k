@@ -1,18 +1,11 @@
 ---
 layout: exercise_page
 title: "Tehtävä 1.3: Piirakkaresepti (5p)"
-exercise_template_name: # W1E03.Piirakkaresepti
-exercise_discussion_id:
-exercise_upload_id:
+exercise_template_name: W1E03.Piirakkaresepti
+exercise_discussion_id: 91527
+exercise_upload_id: 364641
 modified_at: 8.1.2018
-kesken: 1
-julkaisu: 8.1.2018
-no_review: 1
 ---
-
-Tehtävä 1.3
-
-{% comment %}
 
 Muokkaa tehtäväpohjassa olevia tiedostoja `index.html`, `recipe1.css` ja `recipe2.css` siten, että html-sivu näkyy selaimessa alla olevan kuvan mukaisena.
 
@@ -33,6 +26,14 @@ Toteuta ratkaisu [spesifikaation][speksi] mukaan huomioiden kuitenkin, että teh
 [vaihe2]: https://moodle2.tut.fi/mod/resource/view.php?id=315262
 [vaihe3]: https://moodle2.tut.fi/mod/resource/view.php?id=315263
 [tsekki]: https://moodle2.tut.fi/mod/resource/view.php?id=315264
+
+
+[speksi]: https://moodle2.tut.fi/mod/resource/view.php?id=361257
+[vaihe0]: https://moodle2.tut.fi/mod/resource/view.php?id=361258
+[vaihe1]: https://moodle2.tut.fi/mod/resource/view.php?id=361259
+[vaihe2]: https://moodle2.tut.fi/mod/resource/view.php?id=361260
+[vaihe3]: https://moodle2.tut.fi/mod/resource/view.php?id=361261
+[tsekki]: https://moodle2.tut.fi/mod/resource/view.php?id=361262
 
 
 Piirakkasivu oletettavasti edellyttää seuraavien html-elementtien käyttöä[^2]:  [a][a], [abbr][abbr], [blockquote][blockquote], [br][br], [del], [h1][h1], [h2], [hr][hr], [img][img], [li][li], [link][link] ([rel][rel]="stylesheet", [rel][rel]="icon"), [ol][ol], [p], [pre], [span][span], [strong][strong] ja [ul][ul]. Myös copyright-[entiteettiä][ent] varmaankin tarvitaan. Tehtävän kannalta ainakin seuraavat lienevät keskeisiä css-ominaisuuksia: [background-attachment][background-attachment], [background-color][background-color], [background-image][background-image], [color][color], [font-family][font-family], [font-size][font-size], [font-style][font-style], [font-weight][font-weight], [letter-spacing][letter-spacing], [list-style-image][list-style-image], [text-align][text-align] ja [text-decoration][text-decoration].
@@ -94,4 +95,4 @@ Copyright © Marty Stepp / Jessica Miller, licensed under Creative Commons Attri
 
 [cse154]:https://courses.cs.washington.edu/courses/cse154/
 
-{% endcomment %}
+Alaviitteet

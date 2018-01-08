@@ -1,18 +1,11 @@
 ---
 layout: exercise_page
 title: "Tehtävä 1.1: Ascii-artisti (1p)"
-exercise_template_name: # W1E01.AsciiArtisti
-exercise_discussion_id:
-exercise_upload_id:
+exercise_template_name: W1E01.AsciiArtisti
+exercise_discussion_id: 91525
+exercise_upload_id: 361249
 modified_at: 8.1.2018
-kesken: 1
-julkaisu: 8.1.2018
-no_review: 1
 ---
-
-Tehtävä 1.1
-
-{% comment %}
 
 Tehtäväpohjassa olevassa `Site Root` -kansiossa[^1] on dokumentti `index.html`. Muokkaa dokumenttia siten, että sen katsominen selaimessa näyttää seuraavannäköisen ASCII-taideteoksen:
 
@@ -56,15 +49,15 @@ NetBeansin -projektissa on mukana myös tiedosto `testaa.html`, jota ajamalla (*
 
 Jos esim. testäväkuvauksessa on epäselvyyksiä tai kaipaa tuekseen yleisen tason ratkaisuvihjeitä, voi käyttää Moodlessa olevaan tehtäväkohtaista keskustelua, johon ohjaa sivun alussa oleva [Keskustelu][keskustelu]-linkki. Tämän tehtävän [keskustelussa][keskustelu] on jo hyviä esimerkkejä keskustelualueen viesteistä.
 
-[keskustelu]: https://moodle2.tut.fi/mod/forum/discuss.php?d=77873
+[keskustelu]: https://moodle2.tut.fi/mod/forum/discuss.php?d=91525
 
 Tehtävän ratkaisun voi palauttaa sivun yläosan [Palautus][palautus]-linkin kautta. Linkki ohjaa Moodlessa olevaan ao. palautustyökaluun, jonka kautta ratkaisuun liittyvät tiedostot voi palauttaa (tässä: index.html).
 
-[palautus]: https://moodle2.tut.fi/mod/vpl/view.php?id=315272
+[palautus]: https://moodle2.tut.fi/mod/vpl/view.php?id=361249
 
-Jos tehtävän ratkaisussa tulee vastaan sellaisia ylipääsemättömiä ongelmia, joita ei ole luonteva käsitellä [keskustelussa][keskustelu], voi lähettää kurssin vetäjälle katselmointipyynnön palauttamalla ratkaisuun liittyvät tiedostot ja kirjaamalla ongelmakuvauksen vetäjälle lähetettävään sähköpostiviestiin. Sivun yläosan [Katselmointipyyntö][katselmointi]-linkki osoitaa Moodlessa olevaan "mailto"-linkkiin, jonka tarkoitus on tuoda esiin osin valmiiksi täytetty viestin kirjoitus -ikkuna.[^5]
+Jos tehtävän ratkaisussa tulee vastaan sellaisia ylipääsemättömiä ongelmia, joita ei ole luonteva käsitellä [keskustelussa][keskustelu], voi lähettää kurssin ohjaajalle katselmointipyynnön palauttamalla ratkaisuun liittyvät tiedostot ja kirjaamalla ongelmakuvauksen vetäjälle lähetettävään sähköpostiviestiin. Sivun yläosan [Katselmointipyyntö][katselmointi]-linkki osoitaa Moodlessa olevaan "mailto"-linkkiin, jonka tarkoitus on tuoda esiin osin valmiiksi täytetty viestin kirjoitus -ikkuna.[^5]
 
-[katselmointi]: https://moodle2.tut.fi/mod/url/view.php?id=314337
+[katselmointi]: https://moodle2.tut.fi/mod/url/view.php?id=361246
 
 [^5]: Ei toimi kaikissa ympäristöissä näin varsinkaan, jos Moodleen ei ole ennalta kirjauduttu, mutta sähköpostiviestin voi lähettää myös suoraan ilman ko. linkin apua.
 
@@ -77,4 +70,5 @@ Creative Commons BY-NC-SA.
 
 [weso]: http://web-selainohjelmointi.github.io/
 
-{% endcomment %}
+
+Alaviitteet

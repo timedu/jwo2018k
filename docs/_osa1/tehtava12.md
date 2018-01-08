@@ -1,18 +1,12 @@
 ---
 layout: exercise_page
 title: "Tehtävä 1.2: Kampuskuoro (1p)"
-exercise_template_name: # W1E02.Kampuskuoro
-exercise_discussion_id:
-exercise_upload_id:
+exercise_template_name: W1E02.Kampuskuoro
+exercise_discussion_id: 91526
+exercise_upload_id: 364640
 modified_at: 8.1.2018
-kesken: 1
-julkaisu: 8.1.2018
-no_review: 1
 ---
 
-Tehtävä 1.2
-
-{% comment %}
 
 Muokkaa tehtäväpohjassa olevaa sivua `index.html` siten, että se näyttää selaimessa seuraavalta:
 
@@ -36,5 +30,3 @@ Creative Commons BY-NC-SA.
 </small>
 
 [weso]: http://web-selainohjelmointi.github.io/
-
-{% endcomment %}

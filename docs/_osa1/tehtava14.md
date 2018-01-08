@@ -1,18 +1,11 @@
 ---
 layout: exercise_page
 title: "Tehtävä 1.4: CSS Askeleet (1p)"
-exercise_template_name: # W1E04.CSSAskeleet
-exercise_discussion_id:
-exercise_upload_id:
+exercise_template_name: W1E04.CSSAskeleet
+exercise_discussion_id: 91528
+exercise_upload_id: 364642
 modified_at: 8.1.2018
-kesken: 1
-julkaisu: 8.1.2018
-no_review: 1
 ---
-
-Tehtävä 1.4
-
-{% comment %}
 
 Aseta tiedostoon `index.html` viite tehtäväpohjan kansiossa `Site Root/css` olevaan tyylitiedostoon `style.css`. Muokkaa tyylitiedostoa siten, että sivu `index.html` näyttää seuraavanlaiselta:
 
@@ -38,5 +31,3 @@ Creative Commons BY-NC-SA.
 </small>
 
 [weso]: http://web-selainohjelmointi.github.io/
-
-{% endcomment %}

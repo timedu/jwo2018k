@@ -10,8 +10,9 @@ kurssin_ajankohta: "Kevät 2018"
 discussion_address: "https://moodle2.tut.fi/mod/forum/discuss.php?d="
 upload_address: "https://moodle2.tut.fi/mod/vpl/view.php?id="
 
-# TODO: päivitä
-review_address: "https://moodle2.tut.fi/mod/url/view.php?id=314337"
+# review_address: "https://moodle2.tut.fi/mod/url/view.php?id=314337"
+review_address: "https://moodle2.tut.fi/mod/url/view.php?id=361246"
+
 
 # Build settings
 

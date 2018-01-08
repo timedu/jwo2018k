@@ -1,10 +1,18 @@
 ---
 layout: exercise_page
 title: "Tehtävä 1.5: Suosikit (1p)"
-exercise_template_name: W1E05.Suosikit
-exercise_discussion_id: 77877
-exercise_upload_id: 315277
+exercise_template_name: # W1E05.Suosikit
+exercise_discussion_id:
+exercise_upload_id:
+modified_at: 8.1.2018
+kesken: 1
+julkaisu: 8.1.2018
+no_review: 1
 ---
+
+Tehtävä 1.5
+
+{% comment %}
 
 Tehtäväpohjan tiedostossa `index.html` on lista suosikkeja[^1]. Kopioi tiedoston käyttöön [edellisessä tehtävässä](../tehtava14) laatimasi tyylitiedosto ja täydennä tyylistöä siten, että `index.html` näyttää selaimessa alla olevan kuvan mukaiselta. Laadi täydentävät tyylit tiedostossa `index.html` olevan `style`-elementin sisällöksi.
 
@@ -17,9 +25,9 @@ Tehtäväpohjan tiedostossa `index.html` on lista suosikkeja[^1]. Kopioi tiedost
 ---
 <small>Kuva 1.</small>
 
-Sivun `article`-elementtien tulee kääntyä hieman kun hiiren kursori viedään niiden päälle. Linkkeihin liittyvät tekstit esitetään alleviivattuina vain, kun kursori on niiden yläpuolella. 
+Sivun `article`-elementtien tulee kääntyä hieman kun hiiren kursori viedään niiden päälle. Linkkeihin liittyvät tekstit esitetään alleviivattuina vain, kun kursori on niiden yläpuolella.
 
-**Palauta** tehtävästä tiedosto `index.html`. Tehtäväpohjassa oleva sivu `testaa.html` liittyy ainoastaan edellisestä tehtävästä kopioituihin tyyleihin. Se ei testaa tässä laadittavia lisäpiirteitä. 
+**Palauta** tehtävästä tiedosto `index.html`. Tehtäväpohjassa oleva sivu `testaa.html` liittyy ainoastaan edellisestä tehtävästä kopioituihin tyyleihin. Se ei testaa tässä laadittavia lisäpiirteitä.
 
 
 <br/>
@@ -30,3 +38,5 @@ Creative Commons BY-NC-SA.
 </small>
 
 [weso]: http://web-selainohjelmointi.github.io/
+
+{% endcomment %}

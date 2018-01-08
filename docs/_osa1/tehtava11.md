@@ -1,11 +1,18 @@
 ---
 layout: exercise_page
 title: "Tehtävä 1.1: Ascii-artisti (1p)"
-exercise_template_name: W1E01.AsciiArtisti
-exercise_discussion_id: 77873
-exercise_upload_id: 315272
+exercise_template_name: # W1E01.AsciiArtisti
+exercise_discussion_id:
+exercise_upload_id:
+modified_at: 8.1.2018
+kesken: 1
+julkaisu: 8.1.2018
+no_review: 1
 ---
 
+Tehtävä 1.1
+
+{% comment %}
 
 Tehtäväpohjassa olevassa `Site Root` -kansiossa[^1] on dokumentti `index.html`. Muokkaa dokumenttia siten, että sen katsominen selaimessa näyttää seuraavannäköisen ASCII-taideteoksen:
 
@@ -18,9 +25,9 @@ Tehtäväpohjassa olevassa `Site Root` -kansiossa[^1] on dokumentti `index.html`
 ---
 <small>Kuva 1.</small>
 
-Vinkki tarvittaville muutoksille on yllä olevassa kuvassa. 
+Vinkki tarvittaville muutoksille on yllä olevassa kuvassa.
 
-**Palauta** tehtävästä tiedosto `index.html`. Varmista ennen palautusta, että tehtäväpohjassa oleva sivu `testaa.html` ei esitä virheilmoituksia. 
+**Palauta** tehtävästä tiedosto `index.html`. Varmista ennen palautusta, että tehtäväpohjassa oleva sivu `testaa.html` ei esitä virheilmoituksia.
 
 ### Vihjeitä ja lisätietoja
 
@@ -41,7 +48,7 @@ Kun projektin avaa NetBeansiin, näkymä on *Kuvan 2* kaltainen. Tehtävä ratka
 
 [^3]: `index.html`-sivu tulee esiin myös "ajamalla" projektin, koska index on asetettu projektin käynnistysivuksi.
 
-*Run File* käynnistää NetBeansiin integroidun web-palvelimen ja valitun selaimen sekä ohjaa selainta lataamaan sivu osoitteesta `http://localhost:8383/W1E01/index.html`. 
+*Run File* käynnistää NetBeansiin integroidun web-palvelimen ja valitun selaimen sekä ohjaa selainta lataamaan sivu osoitteesta `http://localhost:8383/W1E01/index.html`.
 
 NetBeansin -projektissa on mukana myös tiedosto `testaa.html`, jota ajamalla (*Run File*)[^4] voi testata, onko laadittu ratkaisu oikean suuntainen. Testien tulokset tulevat selaimeen. Projektin *qunit*-kansio sisältöineen liittyy testeihin. Testien ajo edellyttää verkkoyhteyttä.
 
@@ -70,3 +77,4 @@ Creative Commons BY-NC-SA.
 
 [weso]: http://web-selainohjelmointi.github.io/
 
+{% endcomment %}

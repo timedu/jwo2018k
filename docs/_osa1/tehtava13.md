@@ -1,10 +1,18 @@
 ---
 layout: exercise_page
 title: "Tehtävä 1.3: Piirakkaresepti (5p)"
-exercise_template_name: W1E03.Piirakkaresepti
-exercise_discussion_id: 77875
-exercise_upload_id: 315275
+exercise_template_name: # W1E03.Piirakkaresepti
+exercise_discussion_id:
+exercise_upload_id:
+modified_at: 8.1.2018
+kesken: 1
+julkaisu: 8.1.2018
+no_review: 1
 ---
+
+Tehtävä 1.3
+
+{% comment %}
 
 Muokkaa tehtäväpohjassa olevia tiedostoja `index.html`, `recipe1.css` ja `recipe2.css` siten, että html-sivu näkyy selaimessa alla olevan kuvan mukaisena.
 
@@ -15,7 +23,7 @@ Muokkaa tehtäväpohjassa olevia tiedostoja `index.html`, `recipe1.css` ja `reci
 ---
 <small>Kuva 1.</small>
 
-Toteuta ratkaisu [spesifikaation][speksi] mukaan huomioiden kuitenkin, että tehtäväpohja sisältää jo reseptin perustekstin ja kaikki tarvittavat kuvat[^1]. Ratkaisu kannattanee laatia vaiheittain seuraavasti: 1) [HTML-merkkaus][vaihe1], 2) [perustyylit][vaihe2] (`recipe1.css`) ja 3) [lisäominaisuudet][vaihe3] (`recipe2.css` ja merkkauksen täydennys). 
+Toteuta ratkaisu [spesifikaation][speksi] mukaan huomioiden kuitenkin, että tehtäväpohja sisältää jo reseptin perustekstin ja kaikki tarvittavat kuvat[^1]. Ratkaisu kannattanee laatia vaiheittain seuraavasti: 1) [HTML-merkkaus][vaihe1], 2) [perustyylit][vaihe2] (`recipe1.css`) ja 3) [lisäominaisuudet][vaihe3] (`recipe2.css` ja merkkauksen täydennys).
 
 [^1]: Spesifikaatiossa esiintyviä validaattorikuvia/-linkkejä ei tarvitse sisällyttää ratkaisuun.
 
@@ -79,9 +87,11 @@ Piirakkasivu oletettavasti edellyttää seuraavien html-elementtien käyttöä[^
 <br/>
 
 <small>
-Tehtävän lähde: [Web Programming][cse154], University of Washington, 
+Tehtävän lähde: [Web Programming][cse154], University of Washington,
 Computer Science & Engineering.<br/>
 Copyright © Marty Stepp / Jessica Miller, licensed under Creative Commons Attribution 2.5 License.
 </small>
 
 [cse154]:https://courses.cs.washington.edu/courses/cse154/
+
+{% endcomment %}

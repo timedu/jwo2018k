@@ -6,6 +6,11 @@ kesken: 1
 
 JWO2018k / Osa 4
 
+[Node.js](https://nodejs.org/),
+[Express](https://expressjs.com),
+[Handlebars](http://handlebarsjs.com)
+
+
 {% comment %}
 
 Opintojakson tämä osa jatkaa [PHP][PHP]-teemaa, ja [edellisen osan](../osa3) tapaan materiaali löytyy [Viope-oppimisympäristön][viope] kurssilta *PHP-ohjelmoinnin perusteet (JWO2017k)*, josta nyt käsitellään lukuja 7-9. Esillä ovat *funktiot* ja *tiedostokäsittely* sekä *evästeet* ja *istunnot*. Tosin evästeisiin ja istuntoihin tukeudutaan vasta opintojakson soveveltavissa tehtävissä.

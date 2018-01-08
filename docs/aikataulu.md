@@ -1,40 +1,40 @@
 ---
 layout: site_page
 title: Aikataulu
-permalink: /aikataulu/index.html 
+permalink: /aikataulu/index.html
+modified_at: 8.1.2018
 ---
 
 Kurssi jakaantuun seitsämään osaan. Seuraavassa taulukossa on kuhunkin osaan liittyvät ajankohdat koskien materiaalin julkaisua (M), kontaktitunteja (K) sekä tehtävien palautusta (P). Taulukon lopussa on tenttiajankohdat (T).
 
 | vko   | ma   | ti   | ke   | to   | pe   | la   | su   |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 10    |      |      |  M1  |  K1  |      |      |      | 
-| 11    |      |  M2  |      |  K2  |  P1  |      |      | 
-| 12    |      |  M3  |      |  K3  |  P2  |      |      | 
-| 13    |      |  M4  |      |  K4  |  P3  |      |      | 
-| 14    |      |  M5  |      |  K5  |  P4  |      |      | 
-| 15    |      |      |      |      |      |      |      | 
-| 16    |      |  M6  |      |  K6  |  P5  |      |      | 
-| 17    |      |  M7  |      |  K7  |  P6  |      |      | 
-| 18    |      |      |      |      |  P7  |      |      | 
-| 19    |  T1  |  T1  |  T1  |  T1  |  T1  |  T1  |  T1  | 
-| 20    |  T1  |  T1  |  T1  |  T1  |  T1  |  T1  |  T1  | 
-| 21    |      |      |      |      |      |      |      | 
-| 22    |  T2  |  T2  |  T2  |  T2  |  T2  |  T2  |  T2  | 
-| 23    |      |      |      |      |      |      |      | 
-| 24    |  T3  |  T3  |  T3  |  T3  |  T3  |  T3  |  T3  | 
+| 02    |  M1  |  K1  |      |      |  M2  |      |      |
+| 03    |      |  K2  |  P1  |      |  M3  |      |      |
+| 04    |      |  K3  |  P2  |      |  M4  |      |      |
+| 05    |      |  K4  |  P3  |      |  M5  |      |      |
+| 06    |      |  K5  |  P4  |      |  M6  |      |      |
+| 07    |      |  K6  |  P5  |      |  M7  |      |      |
+| 08    |      |  K7  |  P6  |      |      |      |      |
+| 09    |      |      |  P7  |      |      |      |      |
+| 10    |  T   |  T   |  T   |  T   |  T   |  T   |  T   |
+| 11    |  T   |  T   |  T   |  T   |  T   |  T   |  T   |
+| 12    |  T   |  T   |  T   |  T   |  T   |  T   |  T   |
+| 13    |  T   |  T   |  T   |  T   |  T   |  T   |  T   |
+| 14    |  T   |  T   |  T   |  T   |  T   |  T   |  T   |
 {:.timedu-table-1 }
 
 <br/>
-M
-: materiaalin julkaisupäivä; oletettavasti ainakin osa materiaalista on käytettävissä (ainakin luonnostasolla) jo aikaisemmin
- 
-K 
-: kontaktitunnit luokassa ATK-257 klo 15:15 - 18:00
+(M)
+: materiaalin julkaisupäivä
+(ainakin osa materiaalista on käytettävissä esitettynä ajankohtana)
 
-P
+(K)
+: kontaktitunnit luokassa ATK-112 klo 9 - 12
+(ohjaaja paikalla viikoilla 2 ja 8 klo 9 - 12 ja viikoilla 3-7 klo 10:30 - 12:00)
+
+(P)
 : tehtävien viimeinen palautus-/ratkaisupäivä (klo 23:55)
 
-T
+(T)
 : EXAM-tenttiperiodi (saattaa olla, että EXAM-luokka ei ole käytettävissä tenttiperiodiin mahdollisesti osuvina pyhäpäivinä)
-

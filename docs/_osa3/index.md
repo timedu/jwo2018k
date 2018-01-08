@@ -6,6 +6,9 @@ kesken: 1
 
 JWO2018k / Osa 3
 
+[jQuery](https://jquery.com),
+[Bootstrap](http://getbootstrap.com)
+
 {% comment %}
 
 Opintojakson edellisten osien teemat käsittelivät tekniikoita (HTML, CSS, JavaScript), jotka tulkitaan web-selaimessa. Tässä osassa fokus siirtyy palvelinpäähän. Esillä on ehkä yleisin palvelinpään web-ohjelmointikieli, [PHP][PHP]. Samaa teemaa jatketaan vielä [seuraavassakin osassa](../osa4).

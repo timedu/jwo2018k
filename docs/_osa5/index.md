@@ -4,8 +4,10 @@ permalink: /:collection/index.html
 kesken: 1
 ---
 
-
 JWO2018k / Osa 5
+
+[SQLite](https://www.sqlite.org)
+
 
 {% comment %}
 

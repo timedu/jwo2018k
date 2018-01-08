@@ -7,6 +7,8 @@ modified_at: 3.1.2018
 
 JWO2018k / Osa 2
 
+[JavaScript](https://developer.mozilla.org/bm/docs/Web/JavaScript)
+
 {% comment %}
 
 {% assign weso = 'http://web-selainohjelmointi.github.io' %}

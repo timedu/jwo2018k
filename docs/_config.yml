@@ -23,52 +23,47 @@ collections:
     output: true
     permalink: /:collection/:path/
     nimi: Osa 1
-    otsikko: "HTML, CSS I"
+    otsikko: "Selainpään perustekniikoista I - HTML, CSS"
     julkaisu: 5.1.2018
 
   osa2:
     output: true
     permalink: /:collection/:path/
     nimi: Osa 2
-    otsikko: "CSS II, JavaScript"
+    otsikko: "Selainpään perustekniikoista II - CSS, JavaScript"
     julkaisu: 12.1.2018
 
   osa3:
     output: true
     permalink: /:collection/:path/
     nimi: Osa 3
-    # otsikko: "PHP I"
-    otsikko: ""
+    otsikko: "Selainpään kirjastoista - jQuery, Bootstrap"
     julkaisu: 19.1.2018
 
   osa4:
     output: true
     permalink: /:collection/:path/
     nimi: Osa 4
-    # otsikko: "PHP II"
-    otsikko: ""
+    otsikko: "Palvelinpään ohjelmoinnista - Node, Express, Handlebars"
     julkaisu: 26.1.2018
 
   osa5:
     output: true
     permalink: /:collection/:path/
     nimi: Osa 5
-    # otsikko: "Soveltavat tehtävät I"
-    otsikko: ""
+    otsikko: "Tietokannan käsittelystä - SQLite"
     julkaisu: 2.2.2018
 
   osa6:
     output: true
     permalink: /:collection/:path/
     nimi: Osa 6
-    # otsikko: "Soveltavat tehtävät II"
-    otsikko: ""
+    otsikko: "Soveltavia tehtäviä I"
     julkaisu: 9.2.2018
 
   osa7:
     output: true
     permalink: /:collection/:path/
     nimi: Osa 7
-    # otsikko: "Soveltavat tehtävät III"
-    otsikko: ""
+    otsikko: "Soveltavia tehtäviä II"
     julkaisu: 16.2.2018

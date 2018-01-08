@@ -6,7 +6,10 @@ modified_at: 5.1.2018
 julkaisu: 8.1.2018
 ---
 
-JWO2018k / Osa 1
+[HTML][HTML] (*HyperText Markup Language*) on kieli, jolla kuvataan  web-sivun rakenne ja sivun sisältämä teksti. HTML-sivu koostuu joukosta elementtejä, joista selain hahmontaa määrättyjen sääntöjen  perusteella käyttäjälle esitettävän näkymän. Elementeillä on tietty oletusarvoinen ulkoasu, mutta yleensä sitä muokataan erillisillä [CSS][CSS] -tyylisäännöillä (*Cascading Style Sheets*).
+
+[HTML]: https://developer.mozilla.org/en-US/docs/Web/HTML
+[CSS]: https://developer.mozilla.org/en-US/docs/Web/CSS
 
 {% comment %}
 

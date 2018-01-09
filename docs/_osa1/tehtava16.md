@@ -27,8 +27,10 @@ Sivu sisältää yksinkertaisen tilauslomakkeen, joka on esitetty täyttämätt�
 ---
 <small>Kuva 2. Lomake täytettynä.</small>
 
-Kun käyttäjä klikkaa lomakkeessa olevaa *Lähetä* -painiketta lomakkeen tiedot välitetään osoitteeseen `http://jkorpela.fi/cgi-bin/echo.cgi`, joka palautta selaimelle palvelimen vastaanottaman datan siten,
+Kun käyttäjä klikkaa lomakkeessa olevaa *Lähetä* -painiketta lomakkeen tiedot välitetään osoitteeseen `http://jkorpela.fi/cgi-bin/echo.cgi`[^echo], joka palauttaa selaimelle palvelimen vastaanottaman datan siten,
 että selain esittää sen *Kuvan 3* kaltaisena.
+
+[^echo]: Lähde: <http://jkorpela.fi/forms/testing.html>
 
 ---
 
@@ -41,3 +43,20 @@ että selain esittää sen *Kuvan 3* kaltaisena.
 **Palauta** tehtävästä tiedosto `index.html`. Varmista ennen palautusta,
 että lomake toimii edellä esitetyllä tavalla. Tehtäväpohjassa ei ole
 erillistä testaussivua.
+
+
+Vihjeitä: [form][form], [input][input], [textarea][textarea], [action][action],
+[type][type], [name][name], [value][value], [placeholder][placeholder].
+
+[form]: https://www.w3schools.com/tags/tag_form.asp
+[input]: https://www.w3schools.com/tags/tag_input.asp
+[textarea]: https://www.w3schools.com/tags/tag_textarea.asp
+[action]: https://www.w3schools.com/tags/att_form_action.asp
+[type]: https://www.w3schools.com/tags/att_input_type.asp
+[placeholder]: https://www.w3schools.com/tags/att_input_placeholder.asp
+[name]: https://www.w3schools.com/tags/att_input_name.asp
+[value]: https://www.w3schools.com/tags/att_input_value.asp
+
+<br/>
+
+Alaviitteet

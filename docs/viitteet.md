@@ -79,6 +79,7 @@ modified_at: 6.1.2018
 * <https://plus.cs.tut.fi/seitti/S2017/>
 * <https://developer.mozilla.org/en-US/docs/Tools>
 * <http://cs.uccs.edu/~rsebesta/>
+* <http://jkorpela.fi/www.html>
 
 
 {% comment %}

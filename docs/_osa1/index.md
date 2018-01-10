@@ -1,7 +1,7 @@
 ---
 layout: collection_index
 permalink: /:collection/index.html
-modified_at: 8.1.2018
+modified_at: 10.1.2018
 ---
 
 [HTML][HTML] (*HyperText Markup Language*) on kieli, jolla kuvataan  web-sivun rakenne ja sivun sisältämä teksti. HTML-sivu koostuu joukosta elementtejä, joista selain hahmontaa määrättyjen sääntöjen  perusteella käyttäjälle esitettävän näkymän. Elementeillä on tietty oletusarvoinen ulkoasu, mutta yleensä sitä muokataan erillisillä [CSS][CSS] -tyylisäännöillä (*Cascading Style Sheets*).
@@ -40,6 +40,9 @@ Tämä osa sisältää seitsämän tehtävää, jotka yhtä lukuunottamatta
 liittyvät web-sivujen laatimiseen. Viimeinen tehtävä sisältää joukon monivalintakysymyksiä.
 
 {% include exercises_list.md %}
+
+Ratkaisut tehtäviin palautetaan Moodleen viimeistään **17.1.2018 klo 23:55**
+("Moodlen aikaa"). Tehtäväkuvausten yhteydessä on linkit ao. palautustyökaluihin.
 
 Tehtävät 1.1, 1.2, 1.4 ja 1.5 ovat peräisin Helsingin yliopiston [Web-selaiohjelmointi]({{weso}}) -materiaalista. Tehtävä 1.3 on poimittu Washingtonin yliopiston [Web Programming][cse154] -kurssin aineistosta.
 

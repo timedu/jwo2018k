@@ -24,14 +24,14 @@ collections:
     output: true
     permalink: /:collection/:path/
     nimi: Osa 1
-    otsikko: "Selainpään perustekniikoista I - HTML, CSS"
+    otsikko: "Selainpään perustekniikoista - HTML, CSS"
     julkaisu: 5.1.2018
 
   osa2:
     output: true
     permalink: /:collection/:path/
     nimi: Osa 2
-    otsikko: "Selainpään perustekniikoista II - CSS, JavaScript"
+    otsikko: "Selainpään perustekniikoista - JavaScript"
     julkaisu: 12.1.2018
 
   osa3:

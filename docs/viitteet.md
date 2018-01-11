@@ -69,6 +69,12 @@ modified_at: 6.1.2018
 * [NetBeans IDE](http://netbeans.org)  
 * [Notepad++](https://notepad-plus-plus.org)
 
+
+#### Testeissä käytettyjä kirjastoja
+
+* [QUnit](http://qunitjs.com)
+* [Sinon.JS](http://sinonjs.org)
+
 #### Muita viitteitä
 
 * <https://developer.mozilla.org/en-US/docs/Web>
@@ -80,6 +86,9 @@ modified_at: 6.1.2018
 * <https://developer.mozilla.org/en-US/docs/Tools>
 * <http://cs.uccs.edu/~rsebesta/>
 * <http://jkorpela.fi/www.html>
+* <https://medium.com/topic/javascript>
+* [50 resources to help you start learning JavaScript in 2017](https://medium.com/coderbyte/50-resources-to-help-you-start-learning-javascript-in-2017-4c70b222a3b9)
+* <https://stackify.com/popular-programming-languages-2018/>
 
 
 {% comment %}
@@ -90,10 +99,5 @@ modified_at: 6.1.2018
 * [PHP-opas](http://www.ohjelmointiputka.net/oppaat/opas.php?tunnus=php_01). Ohjelmointiputka.
 * [PHP Tutorial](https://www.w3schools.com/php/). W3Shools.
 
-Testeissä käytettyjä apuvälineitä
-
-* [QUnit](http://qunitjs.com)
-* [jQuery](https://jquery.com)
-* [Sinon.JS](http://sinonjs.org)
 
 {% endcomment %}

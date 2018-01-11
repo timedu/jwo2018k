@@ -2,20 +2,20 @@
 layout: exercise_page
 title: "Tehtävä 2.3: PerusMOOC (4p)"
 exercise_template_name: W2E03.PerusMOOC
-exercise_discussion_id: 78342
-exercise_upload_id: 315777
+exercise_discussion_id: 91768
+exercise_upload_id: 361267
+modified_at: 11.1.2018
 ---
 
 Tehtäväpohjan tiedostossa `index.html` on erään sivuston merkkaus, jonka ulkoasu selaimessa on viitteenä olevan [kuvan 1][vaihe0] mukainen. Kehitä sivustoa eteenpäin alla kuvatulla tavalla.
 
-[vaihe0]: https://moodle2.tut.fi/mod/resource/view.php?id=315852
-
+[vaihe0]: https://moodle2.tut.fi/mod/resource/view.php?id=361273
 
 #### Vaihe 1
 
 Laadi tyylitiedosto `css/style.css` ja ota se käyttöön sivulla `index.html`. Näiden toimenpiteiden jälkeen sivun ulkoasun selaimessa tulisi olla viitteenä olevan [kuvan 2][vaihe1] mukainen.
 
-[vaihe1]: https://moodle2.tut.fi/mod/resource/view.php?id=315853
+[vaihe1]: https://moodle2.tut.fi/mod/resource/view.php?id=361274
 
 Käytä seuraavia värejä `rgb(233, 229, 217)`, `rgb(73, 69, 69)` ja
 `rgb(66, 126, 120)`. Fonttien määrittely on muotoa `font-family: 'Trebuchet MS', Trebuchet, Arial, sans-serif;`. Huomioi myös esim. tilanne, jossa hiiren kursori viedään valikon linkin yläpuolelle: tällöin linkin tekstin ja taustan värit muuttuvat.
@@ -24,7 +24,7 @@ Käytä seuraavia värejä `rgb(233, 229, 217)`, `rgb(73, 69, 69)` ja
 
 Lisää sivulle toiminnallisuus, jossa vain ensimmäinen osio (`section`) näkyy ensin. valikon linkkejä klikkaamalla sivulla vaihdetaan osiosta toiseen. Viitteenä olevassa [kuvassa 3] [vaihe2] valintaa *Materiaali* on juuri klikattu.
 
-[vaihe2]: https://moodle2.tut.fi/mod/resource/view.php?id=315854
+[vaihe2]: https://moodle2.tut.fi/mod/resource/view.php?id=361275
 
 Toteuta toiminnallisuus laatimalla tiedostoon `js/code.js` funktio `displaySection`. Ota JavaScript -tiedosto käyttöön sivulla `index.html`, jossa on jo valmiina em. funktion kutsut (*Listaus 1*).
 
@@ -84,7 +84,7 @@ Seuraavassa on pelkistetty esimerkki siitä, millä eri tavoin JavaScript -toimi
 
     <body>
         <button>Toggle Hello</button>          
-        <p>Hello, World!</p> 
+        <p>Hello, World!</p>
     </body>
 
 {% endhighlight %}
@@ -100,7 +100,7 @@ Toiminnallisuuden toteuttava JavaScript-koodi voidaan kirjoittaa merkkauksen ohe
         <button onclick="document.querySelector('p').classList.toggle('hidden');">
             Toggle Hello
         </button>        
-        <p> 
+        <p>
             Hello, World!
         </p>            
     </body>
@@ -116,7 +116,7 @@ Tässä oletetaan, että ennalta on määritelty `hidden`-niminen tyyliluokka[^1
 [classList]: https://developer.mozilla.org/en-US/docs/Web/API/Element/classList
 [add]: https://developer.mozilla.org/en-US/docs/Web/API/DOMTokenList/DOMTokenList.add()
 
-[^1]: Ks. esim. kurssimateriaalin [kohta 4.6][kohta-4-6].
+[^1]: Ks. esim. oheismateriaalin [kohta 4.6][kohta-4-6].
 
 [kohta-4-6]: http://web-selainohjelmointi.github.io/#4.6-Case:-Tyylien-muuttaminen-JavaScriptillä
 
@@ -130,10 +130,10 @@ Seuraavassa listauksessa merkkauksen ohessa oleva JavaScript -koodi on typistett
         <button onclick="vaihdaHello();">
             Toggle Hello
         </button>  
-        
-        <p> 
+
+        <p>
             Hello, World!
-        </p> 
+        </p>
 
         <script>
             function piilotaHello() {
@@ -151,7 +151,7 @@ Seuraavassa listauksessa merkkauksen ohessa oleva JavaScript -koodi on typistett
 
 *Listauksessa 5* merkkauksessa olevien funktioiden kutsuma toiminnallisuus on siirretty `script` -elementin sisällöksi[^2]. Seuraavassa myös funktiokutsut on poistettu merkkauksesta:
 
-[^2]: Koodi olisi luontevampi kirjoittaa erilliseen tiedostoon, mutta tässä se yksinkertaisuuden vuoksi on osana html-tiedostoa. 
+[^2]: Koodi olisi luontevampi kirjoittaa erilliseen tiedostoon, mutta tässä se yksinkertaisuuden vuoksi on osana html-tiedostoa.
 
 
 {% highlight html %}
@@ -159,7 +159,7 @@ Seuraavassa listauksessa merkkauksen ohessa oleva JavaScript -koodi on typistett
     <body>
 
         <button>Toggle Hello</button>          
-        <p>Hello, World!</p> 
+        <p>Hello, World!</p>
 
         <script>
             function piilotaHello() {
@@ -188,20 +188,20 @@ JavaScriptissa funktot ovat tietyn tyyppisiä olioita, joita voidaan asettaa mui
     <body>
 
         <button>Toggle Hello</button>          
-        <p>Hello, World!</p> 
+        <p>Hello, World!</p>
 
         <script>
-        
+
             var piilotaHello = function () {
                 document.querySelector('p').classList.add('hidden');
             };
             var vaihdaHello = function () {
                 document.querySelector('p').classList.toggle('hidden');
             };
-            
+
             window.onload = piilotaHello;
             document.querySelector('button').onclick = vaihdaHello;
-            
+
         </script>
 
     </body>
@@ -216,7 +216,7 @@ JavaScriptissa funktot ovat tietyn tyyppisiä olioita, joita voidaan asettaa mui
     <body>
 
         <button>Toggle Hello</button>          
-        <p>Hello, World!</p> 
+        <p>Hello, World!</p>
 
         <script>
 
@@ -227,9 +227,9 @@ JavaScriptissa funktot ovat tietyn tyyppisiä olioita, joita voidaan asettaa mui
             document.querySelector('button').onclick = function () {
                 document.querySelector('p').classList.toggle('hidden');
             };
-            
+
         </script>
-        
+
     </body>
 
 {% endhighlight %}
@@ -252,7 +252,7 @@ Erilaisiin tapahtumiin[^3] liittyviä funktioita voidaan asettaa myös [`addEven
     <body>
 
         <button>Toggle Hello</button>          
-        <p> ello, World!</p> 
+        <p> ello, World!</p>
 
         <script>
             var piilotaHello = function () {
@@ -278,7 +278,7 @@ Funktio voidaan antaa suoraan parametriksi toiselle funktiolle ja siten edellise
     <body>
 
         <button>Toggle Hello</button>          
-        <p>Hello, World!</p> 
+        <p>Hello, World!</p>
 
         <script>
             window.addEventListener('load', function () {
@@ -295,7 +295,6 @@ Funktio voidaan antaa suoraan parametriksi toiselle funktiolle ja siten edellise
 <small>Listaus 10.</small>
 
 
-<br/>
 
 <small>
 Tehtävän lähde: [Web-selainohjelmointi][weso], Helsingin yliopisto, Tietojenkäsitelytieteen laitos.
@@ -304,8 +303,6 @@ Creative Commons BY-NC-SA. (alkuperäisiä tehtäviä muokattu)
 
 [weso]: http://web-selainohjelmointi.github.io/
 
-<br/>
 
 
-
-
+Alaviitteet

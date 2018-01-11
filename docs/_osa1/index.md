@@ -9,6 +9,8 @@ modified_at: 10.1.2018
 [HTML]: https://developer.mozilla.org/en-US/docs/Web/HTML
 [CSS]: https://developer.mozilla.org/en-US/docs/Web/CSS
 
+![HTML, CSS](./img/part1_html_css.png){: style="display: block; margin: auto; margin-top: 10px; width: 300px;"}
+
 {% assign weso = 'http://web-selainohjelmointi.github.io' %}
 
 Helsingin [Web-selainohjelmointi]({{weso}}) -materiaalissa näitä

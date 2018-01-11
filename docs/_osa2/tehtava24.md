@@ -2,11 +2,12 @@
 layout: exercise_page
 title: "Tehtävä 2.4: DOMWalker (1p)"
 exercise_template_name: W2E04.DOMWalker
-exercise_discussion_id: 78344
-exercise_upload_id: 315778
+exercise_discussion_id: 91769
+exercise_upload_id: 361268
+modified_at: 11.1.2018
 ---
 
-Tehtäväpohjan tiedosto `index.html` sisältää [edelliseen tehtävään](../tehtava23) liittyvän merkkauksen `div`-elementin sisältönä (`id="perus-mooc"`). Elementin yläpuolella on painonappi sekä toinen `div`-elementti, jonka `id`attribuutin arvona on `dom-walker` (*Listaus 1*). 
+Tehtäväpohjan tiedosto `index.html` sisältää [edelliseen tehtävään](../tehtava23) liittyvän merkkauksen `div`-elementin sisältönä (`id="perus-mooc"`). Elementin yläpuolella on painonappi sekä toinen `div`-elementti, jonka `id`attribuutin arvona on `dom-walker` (*Listaus 1*).
 
 {% highlight html %}
 {% raw %}
@@ -50,7 +51,7 @@ Tehtävän ratkaisussa ei ole tarkoitus soveltaa `textContent`- eikä `innerHTML
 
 [tagName]: https://developer.mozilla.org/en-US/docs/Web/API/Element/tagName
 
-**Palauta** tehtävän ratkaisuna tiedosto `code.js`. Varmista ennen palautusta, että tehtäväpohjassa oleva sivu `testaa.html` ei esitä virheilmoituksia. 
+**Palauta** tehtävän ratkaisuna tiedosto `code.js`. Varmista ennen palautusta, että tehtäväpohjassa oleva sivu `testaa.html` ei esitä virheilmoituksia.
 
 <br/>
 
@@ -60,5 +61,3 @@ Creative Commons BY-NC-SA. (alkuperäistä tehtävää muokattu)
 </small>
 
 [weso]: http://web-selainohjelmointi.github.io/
-
-

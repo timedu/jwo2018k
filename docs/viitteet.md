@@ -3,7 +3,7 @@ layout: site_page
 title: Viitteet
 permalink: /viitteet/index.html
 site_menu: 1
-modified_at: 6.1.2018
+modified_at: 12.1.2018
 ---
 
 
@@ -34,8 +34,10 @@ modified_at: 6.1.2018
 * [JavaScript Tutorial](https://www.w3schools.com/js/default.asp) (W3Schools)
 * [ECMAScript Language Specification](https://tc39.github.io/ecma262/)
 * [Document Object Model (DOM)](https://www.w3.org/DOM/) (W3C)
-* [Eloquent JavaScript](http://eloquentjavascript.net) (Marijn Haverbeke)
 
+* [Eloquent JavaScript: *A Modern Introduction to Programming*](http://eloquentjavascript.net) (Marijn Haverbeke)
+* [Speaking JavaScript: *An In-Depth Guide for Programmers*](http://speakingjs.com/es5/index.html) (Axel Rauschmayer)
+* [Programming JavaScript Applications: *Robust Web Architecture with Node, HTML5, and Modern JS Libraries*](http://chimera.labs.oreilly.com/books/1234000000262/index.html) (Eric Elliott)
 
 #### Selainpään kirjastoja
 
@@ -89,7 +91,6 @@ modified_at: 6.1.2018
 * <https://medium.com/topic/javascript>
 * [50 resources to help you start learning JavaScript in 2017](https://medium.com/coderbyte/50-resources-to-help-you-start-learning-javascript-in-2017-4c70b222a3b9)
 * <https://stackify.com/popular-programming-languages-2018/>
-
 
 {% comment %}
 

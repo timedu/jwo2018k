@@ -4,7 +4,7 @@ title: "Tehtävä 1.5: Suosikit (1p)"
 exercise_template_name: W1E05.Suosikit
 exercise_discussion_id: 91529
 exercise_upload_id: 364643
-modified_at: 8.1.2018
+modified_at: 15.1.2018
 ---
 
 Tehtäväpohjan tiedostossa `index.html` on lista suosikkeja[^1]. Kopioi tiedoston käyttöön [edellisessä tehtävässä](../tehtava14) laatimasi tyylitiedosto ja täydennä tyylistöä siten, että `index.html` näyttää selaimessa alla olevan kuvan mukaiselta. Laadi täydentävät tyylit tiedostossa `index.html` olevan `style`-elementin sisällöksi.
@@ -18,9 +18,15 @@ Tehtäväpohjan tiedostossa `index.html` on lista suosikkeja[^1]. Kopioi tiedost
 ---
 <small>Kuva 1.</small>
 
-Sivun `article`-elementtien tulee kääntyä hieman kun hiiren kursori viedään niiden päälle. Linkkeihin liittyvät tekstit esitetään alleviivattuina vain, kun kursori on niiden yläpuolella.
+Tässä laaditaan sivulle seuraavat ominaisuudet:
 
-**Palauta** tehtävästä tiedosto `index.html`. Tehtäväpohjassa oleva sivu `testaa.html` liittyy ainoastaan edellisestä tehtävästä kopioituihin tyyleihin. Se ei testaa tässä laadittavia lisäpiirteitä.
+1. Linkkeinä toimivien otsikoiden väri on kuten *Kuvassa 1*: `rgb(252,179,21)`.
+2. Linkkeihin liittyvät tekstit esitetään alleviivattuina vain, kun kursori on niiden yläpuolella.
+3. Sivun `article`-elementtien tulee kääntyä hieman kun hiiren kursori viedään niiden päälle.
+
+**Palauta** tehtävästä tiedosto `index.html`.
+Tehtäväpohjassa ei ole tässä laadittaviin ominaisuuksiin liittyviä testejä.
+
 
 
 <br/>

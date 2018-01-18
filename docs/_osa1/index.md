@@ -43,7 +43,8 @@ liittyvät web-sivujen laatimiseen. Viimeinen tehtävä sisältää joukon moniv
 
 {% include exercises_list.md %}
 
-Ratkaisut tehtäviin palautetaan Moodleen viimeistään **17.1.2018 klo 23:55**
+Ratkaisut tehtäviin palautetaan Moodleen viimeistään
+**<strike>17.1.2018</strike> 19.1.2018 klo 23:55**
 ("Moodlen aikaa"). Tehtäväkuvausten yhteydessä on linkit ao. palautustyökaluihin.
 
 Tehtävät 1.1, 1.2, 1.4 ja 1.5 ovat peräisin Helsingin yliopiston [Web-selaiohjelmointi]({{weso}}) -materiaalista. Tehtävä 1.3 on poimittu Washingtonin yliopiston [Web Programming][cse154] -kurssin aineistosta.

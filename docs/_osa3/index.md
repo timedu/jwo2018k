@@ -1,68 +1,64 @@
 ---
 layout: collection_index
 permalink: /:collection/index.html
-kesken: 1
 ---
 
-JWO2018k / Osa 3
+Kaksi edellistä osaa käsittelivät web-selaimen tulkitsemaa kolmea perustekniikkaa.
+*HTML* määrittelee sivun rakenteen ja sisällön. *CSS* viimeistelee dokumentin layoutin ja ulkoasun. *JavaScript* on selaimen tulkitsemaan ohjelmakoodia. Käytännön
+web-kehityksessä tukeudutaan kuitenkin perustekniikoiden päälle rakentuviin
+erilaisiin kirjastoihin, joista tässä osassa on esillä kaksi laajalti käytettyä
+esimerkkiä, *jQuery* ja *Bootstrap*:
 
-[jQuery](https://jquery.com),
-[Bootstrap](http://getbootstrap.com)
+> [jQuery][jQuery] is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers.
+
+> [Bootstrap][Bootstrap] is an open source toolkit for developing with HTML, CSS, and JS. Build responsive, mobile-first projects on the web with the world's most
+popular front-end component library.
+
+[jQuery]: https://jquery.com
+[Bootstrap]: http://getbootstrap.com
+
+{% assign weso = 'http://web-selainohjelmointi.github.io' %}
+
+Helsingin yliopison [Web-selainohjelmointi]({{weso}}) -materiaalissa em. kirjastoja
+käsitellään lyhyesti kohdassa
+[10.1. jQuery](http://web-selainohjelmointi.github.io/#10.1-jQuery)
+ja luvussa
+[18. Twitter Bootstrap](http://web-selainohjelmointi.github.io/#18-Twitter-Bootstrap).
 
 
-<http://web-selainohjelmointi.github.io/#10.1-jQuery>
-
-<http://web-selainohjelmointi.github.io/#18-Twitter-Bootstrap>
-
-<https://eu.udacity.com/course/intro-to-jquery--ud245>
-
-
-{% comment %}
-
-Opintojakson edellisten osien teemat käsittelivät tekniikoita (HTML, CSS, JavaScript), jotka tulkitaan web-selaimessa. Tässä osassa fokus siirtyy palvelinpäähän. Esillä on ehkä yleisin palvelinpään web-ohjelmointikieli, [PHP][PHP]. Samaa teemaa jatketaan vielä [seuraavassakin osassa](../osa4).
-
-[PHP]: http://php.net
-
-Tämän osa aineisto löytyy Viope-oppimisympäristön kurssilta *PHP-ohjelmoinnin perusteet (JWO2017k)*, jolle voi rekisteröityä [Moodlesta löytyvän linkin][viope] kautta. Materiaali sisältää joukon ohjelmointitehtäviä sekä niihin liittyviä teoriasivuja. Tämä osa käsittelee PHP:n näkökulmasta yleisiä ohjelmointiin liittyviä asioita kuten *muuttujat*, *ohjausrakenteet*, *lausekkeet* ja *taulukot* sekä sitä, miten PHP-koodi liitetään HTML-sivulle.
-
-[viope]: https://moodle2.tut.fi/mod/url/view.php?id=315284
-
-<hr/>
-<small>
-[Tehtäväpohjat](https://moodle2.tut.fi/mod/folder/view.php?id=317111) &nbsp;
-[Keskustelu](https://moodle2.tut.fi/mod/forum/view.php?id=317112) &nbsp;
-[Katselmointipyyntö](https://moodle2.tut.fi/mod/url/view.php?id=314337) &nbsp;
-[Palautus katselmointiin](https://moodle2.tut.fi/mod/vpl/view.php?id=317152)
-</small>
 
 ### Tehtävät
 
-Osa sisältää 15 lyhyttä ohjelmointitehtävää, jotka ovat pisteytyksen näkökulmasta keskenään samanarvoisia. Viopen kurssi on avoinna tehtävien ratkaisemista varten 31.3.2017 asti. Luontevinta lienee ratkaista tehtävät Viopen omalla editorilla. Viope myös testaa ratkaisut automaattisesti.
+Osa sisältää kuusi tehtävää, josta viisi ensimmäistä ovat ohjelmointityyppisiä.
+Kuudes tehtävä sisältää ohjelmointitehtäviin liityviä monivalintakysymyksiä.
 
-Tukena voi halutessaan käyttää myös NetBeans IDE:ä, joka ohjaa tulosta syntaksin osalta oikeaan suuntaan. NetBeansissa on PHP-sovelluksia varten oma projektityyppinsä, *PHP Application*. Sovelluksen ajo kuitenkin edellyttää sitä, että ympäristöstä löytyy PHP-tulkki, jonka uudemmat versiot kykenevät toimimaan myös web-palvelimena.
+{% include exercises_list.md %}
 
-NetBeans-projektille on kerrottava, minkälaista web-palvelinta käytetään sovellusta ajettaessa IDE:stä käsin. Jos tukeudutaan PHP-tulkin sisältämään palvelimeen, valinta on *PHP Built-in Web Server*. NetBeansin on myös tiedettävä, missä PHP-tulkki sijaitsee kehityslaitteessa. Luokkakoneissa sen polkunimi on `C:\Apps\PHP\PHP5.6\php.exe`. Omaan Windows-kehitysympäristöön tulkin voi ladata osoitteesta <http://windows.php.net/download>.
+Ratkaisut tehtäviin tulee palauttaa Moodleen viimeistään **31.1.2018 klo 23:55**
+("Moodlen aikaa"). Tehtäväkuvausten yhteydessä on linkit ao. palautustyökaluihin.
+
+Kaikki ohjelmointitehtävät perustuvat *Bootstrap:in* käyttöön. Jokaisessa on
+esillä [Grid][grid], jolla ohjataan elementtien sijoittelua sivulle. Bootstrap
+sisältää myös joukon web-kayttöliittymien rakentamista tukevia
+[komponentteja][components],
+joista tehtävissä esiintyy muutamia esimerkkejä. *jQuery* -pohjaista
+JavaScript -koodia laaditaan kolmessa tehtävässä. Näistä *tehtävässä 3.4*
+manipuloidaan selaimeen ladattua dokumenttia ja *tehtävässä 3.5* kommunikoidaan
+web-palvelimen kanssa.
+
+[grid]: http://getbootstrap.com/docs/4.0/layout/grid/
+[components]: https://getbootstrap.com/docs/4.0/components/
 
 ### Lisätietoja
 
-Kattava esitys PHP:stä on sen [käsikirjasta][manual]. Myös W3Schools-sivustolla aiheesta on oma [osionsa][w3schools-php]. Ohjelmointiputkasta löytyy suomenkielinen [PHP-opas][putka-php].
-
-[manual]: http://php.net/manual/en/
-[w3schools-php]: https://www.w3schools.com/php/default.asp
-[putka-php]: http://www.ohjelmointiputka.net/oppaat/opas.php?tunnus=php_01
-
-Jos PHP-sovelluksia laatii NetBeansilla, niin seuraavaa funktiota voidaan käyttää virheiden jäljityksessä:
-
-{% highlight php %}
-
-    <?php
-    function debug($data) {
-        error_log(print_r($data, TRUE));
-    }
-
-{% endhighlight %}
-
-Funktio tulostaa parametrinsa NetBeansin *Output*-ikunaan. Rakenteinenkin muuttaja saadaan tällä esille luettavassa muodossa.
-
-
-{% endcomment %}
+Molemmilla tässä esillä olevalla kirjastolla
+([jQuery][jQuery], [Bootstrap][Bootstrap]) on kattavat web-aineistot.
+Myös esim. *W3Schools* -sivustolta löytyy osiot sekä
+[jQuery:lle](https://www.w3schools.com/jquery/)
+että
+[Bootstrap:ille](https://www.w3schools.com/bootstrap/).
+Esimerkki veloituksetta opiskeltavissa olevasta jQuery-verkkokurssista on *Udacity:n* valikoimasta löytyvä
+[Intro to jQuery](https://eu.udacity.com/course/intro-to-jquery--ud245),
+joka sisältää mm. 37 lyhyttä videota yhteispituudeltaan n. puoli tuntia.
+[Bootstrap -kursseja](https://www.udemy.com/courses/search/?kw=bootstrap&price=price-free&q=bootstrap&src=sac)
+löytyy esim. *Udemy:stä*.

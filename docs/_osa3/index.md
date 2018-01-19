@@ -3,8 +3,8 @@ layout: collection_index
 permalink: /:collection/index.html
 ---
 
-Kaksi edellistä osaa käsittelivät web-selaimen tulkitsemaa kolmea perustekniikkaa.
-*HTML* määrittelee sivun rakenteen ja sisällön. *CSS* viimeistelee dokumentin layoutin ja ulkoasun. *JavaScript* on selaimen tulkitsemaan ohjelmakoodia. Käytännön
+Kaksi edellistä osaa käsittelivät web-selaimen tulkitsemaa kolmea perustekniikkaa:
+1) *HTML* määrittelee sivun rakenteen ja sisällön, 2) *CSS* viimeistelee dokumentin layoutin ja ulkoasun, 3) *JavaScript* on selaimen tulkitsemaan ohjelmakoodia. Käytännön
 web-kehityksessä tukeudutaan kuitenkin perustekniikoiden päälle rakentuviin
 erilaisiin kirjastoihin, joista tässä osassa on esillä kaksi laajalti käytettyä
 esimerkkiä, *jQuery* ja *Bootstrap*:
@@ -19,7 +19,7 @@ popular front-end component library.
 
 {% assign weso = 'http://web-selainohjelmointi.github.io' %}
 
-Helsingin yliopison [Web-selainohjelmointi]({{weso}}) -materiaalissa em. kirjastoja
+Helsingin yliopison [Web-selainohjelmointi]({{weso}}) -materiaalissa kirjastoja
 käsitellään lyhyesti kohdassa
 [10.1. jQuery](http://web-selainohjelmointi.github.io/#10.1-jQuery)
 ja luvussa

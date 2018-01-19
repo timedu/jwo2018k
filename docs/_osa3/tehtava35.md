@@ -7,6 +7,7 @@ exercise_upload_id:
 kesken: 1
 modified_at: 18.1.2018
 no_review: 1
+julkaisu: 22.1.2018
 ---
 
 

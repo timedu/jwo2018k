@@ -7,7 +7,7 @@ modified_at: 8.1.2018
 
 ![web-sovellus](./img/intro.png){: style="display: block; margin: auto; margin-top: 10px; width: 550px;"}
 
-[Web-sovellusten][application] käyttöliittymänä toimii [selain][browser], joka tekee [HTTP][HTTP] -muotoisia pyyntöjä [web-palvelimelle][server] joko käyttäjän tai selaimen tulkitseman koodin ohjaamana. Tyypillinen vaste pyyntöön on [HTML][HTML] –dokumentti, joka voi sisältää myös [CSS][CSS] –tyyliohjeita ja [JavaScript][JavaScript] –koodia, joko suoraan tai viitteinä ulkopuolisiin tiedostoihin. [HTML][HTML] määrittelee dokumentin sisällön ja rakenteen [CSS][CSS]:n viimeistellessä dokumentin layoutin ja ulkoasun. [JavaScript][JavaScript] on selaimen tulkitsemaan ohjelmakoodia.
+[Web-sovellusten][application] käyttöliittymänä toimii [selain][browser], joka tekee [HTTP][HTTP] -muotoisia pyyntöjä [web-palvelimelle][server] joko käyttäjän tai selaimen tulkitseman koodin ohjaamana. Tyypillinen vaste pyyntöön on [HTML][HTML] –dokumentti, joka voi sisältää myös [CSS][CSS] –tyyliohjeita ja [JavaScript][JavaScript] –koodia, joko suoraan tai viitteinä ulkopuolisiin tiedostoihin. [HTML][HTML] määrittelee dokumentin sisällön ja rakenteen [CSS][CSS]:n viimeistellessä dokumentin layoutin ja ulkoasun. [JavaScript][JavaScript] on selaimen tulkitsemaa ohjelmakoodia.
 
 [application]: https://en.wikipedia.org/wiki/Web_application
 [browser]: https://en.wikipedia.org/wiki/Web_browser

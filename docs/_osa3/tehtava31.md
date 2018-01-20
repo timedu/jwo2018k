@@ -7,7 +7,7 @@ exercise_upload_id:
 kesken: 1
 modified_at: 19.1.2018
 no_review: 1
-julkaisu: 20.1.2018
+julkaisu: 21.1.2018
 ---
 
 [Tehtävässä 1.6](../../osa1/tehtava16) rakennettiin yksinkertainen tilauslomake

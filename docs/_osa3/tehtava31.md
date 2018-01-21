@@ -1,13 +1,10 @@
 ---
 layout: exercise_page
 title: "Tehtävä 3.1: Tilauslomake (2p)"
-exercise_template_name:
-exercise_discussion_id:
-exercise_upload_id:
-kesken: 1
-modified_at: 19.1.2018
-no_review: 1
-julkaisu: 21.1.2018
+exercise_template_name: W3E01.Tilauslomake
+exercise_discussion_id: 92458
+exercise_upload_id: 370619
+modified_at: 21.1.2018
 ---
 
 [Tehtävässä 1.6](../../osa1/tehtava16) rakennettiin yksinkertainen tilauslomake
@@ -28,7 +25,9 @@ tarvittavat html-elementit.
 [^cnd]: Käyttöönotto tapahtuu tässä  verkon yli eräältä CND:lta ([Content Delivery Network](https://en.wikipedia.org/wiki/Content_delivery_network))
 
 
-**Palauta** tehtävästä tiedosto `index.html`.
+**Palauta** tehtävästä tiedosto `index.html`. Varmista ennen palautusta, että
+sivun näyttää selaisessa *Kuvan 1* mukaiselta ja, että tehtäväpohjan testit
+menevät läpi.
 
 
 ### Vihjeitä ja lisätietoja
@@ -91,6 +90,21 @@ CSS-luokkia: `container`, `row`, `col-sm`[^col-sm], `col-sm-2` ja
 [^col-sm]: `col-sm` "päättelee" käyttöönottamansa tilan
 [^offset-sm-2]: siirtää edelementtiä kaksi "pykälää" eteenpäin
 
+Tehtäväpohja sisältää seuraavat layoutin rakentamiseen liittyvät testit:
+
+* Sisältää 2 container-elementtiä
+  - form>div.container
+  - footer>div.container
+* Sisältää 8 row-elementtiä
+  - form>div>div.row: 7
+  - footer>div>div.row: 1
+* Sisältää riveillä 11 "col-*" -elementtiä
+  - nimi-kentän otsikko "col-sm-2"-sarakkeessa
+  - osoite-kentän otsikko "col-sm-2"-sarakkeessa
+  - tuote-nappien otsikko "col-sm-2"-sarakkeessa
+  - opiskelija-laatikon sijaintia siirretty oikealle (offset-sm-2)
+
+
 
 #### Lomake-elementit
 
@@ -104,31 +118,58 @@ kutakuinkin sellaisenaan. Tämän jälkeen lomakkeen tulisi olla selaimessa
 <small>Kuva 5. Tilauslomake, jossa edellisen vaiheen vakiotekstit on
 korvattu lomake-elementeillä.</small>
 
-Huomio myös varsinainen `form`-elementti sekä tuotteen oletusarvo
-(Vasara)[^checked]. *Lähetä* -panikkeen klikkauksen tuli nyt myös tuottaa
-selaimeen samanlainen vaste kuin [Tehtävässä 1.6](../../osa1/tehtava16).
+Huomio myös tuotteen oletusarvo (Vasara)[^checked] sekä se, että
+*Lähetä* -panikkeen klikkauksen tuottaa
+selaimeen samanlaisen vasteen kuin [Tehtävän 1.6](../../osa1/tehtava16)
+ratkaisu.
 
 [^checked]: Vihje: `checked`-attribuutti
+
+Tehtäväpohja sisältää seuraavat lomake-elementtien sijoitteluun liittyvät
+liittyvät testit:
+
+* Yhteensä 7 input -elementtiä
+  - Nimi-kenttä (text)
+  - Osoite-kenttä (text)
+  - Opiskelija-valinta (checkbox)
+  - Tuote-valinnat (radio)
+  - Lähetä-painike (submit)
+* Yksi textarea-elementti
+  - Erikoistoivomukset-alue (textarea)
 
 #### Bootstrap -komponentit
 
 Lomakkeissa esiintyviä elementtejä voidaan muotoilla tähän liittyvillä
-Bootstrapin [CSS-luokilla][forms]. Seuraa, mitä tapahtuu seuraavien
-toimenpiteiden seurauksena:
+Bootstrapin CSS-luokilla. Seuraa, miten sivu selaimessa muuttuu, kun
+seuraavat ehdot täyttyvät:
 
-* aseta `text`-tyyppisille `input`-elementeille sekä `textarea`-elementille
-luokka `form-control`
-* aseta `radio`- ja `checkbox`-tyyppisille `input`-elementeille
-luokka `form-check-input`
-* aseta `submit`-tyyppiselle `input`-elementille luokat `btn` ja `btn-primary`
-* ...
+* Tekstikentillä on "**[form][form]**-control"-luokka
+* Tekstialueella on "form-control"-luokka
+* Valintanapeilla (radio, checkbox) on "form-check-input"-luokka
+* Lähetä-painikkeella on "**[btn][btn]**"- ja "btn-primary"-luokat
+* Opiskelija-valinta kehystetty "form-check"-elementillä (div)
+* Tuote-valinnat kehystetty "form-check-inline"-elementeillä (div)
+* Navigointipalkilla (nav) on "**[navbar][navbar]**"-, "navbar-light"- ja "bg-light"-luokat
+* Navigointipalkin linkillä (a) on "navbar-brand"-luokka
 
+[form]: http://getbootstrap.com/docs/4.0/components/forms/
+[btn]: http://getbootstrap.com/docs/4.0/components/buttons/
+[navbar]: http://getbootstrap.com/docs/4.0/components/navbar/
 
-[forms]: http://getbootstrap.com/docs/4.0/components/forms/
+Edellinen lista on samalla luettelo komponentteihin liittyvistä tehtäväpohjan
+testeistä.
 
 #### Ulkoasun loppusilaukset
 
-...
+Seuraavilla luokilla erotetaan lomake-elementtejä pystysuunnassa hieman
+toisistaan sekä tuotetaan vaakasuuntainen viiva erottamaan sivun alatunniste
+(footer) sen yläpuolisesta sisällöstä.
+
+* input- ja textarea-elementtejä sisältävillä "row"-elementeillä on myös "form-control"-luokka
+* footer-elementillä on "border" ja "border-bottom-0"-luokat
+
+Myös näihin liityvät testit löytyvät tehtäväpohjasta
+
 
 <br/>
 

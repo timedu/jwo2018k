@@ -7,7 +7,7 @@ exercise_upload_id:
 kesken: 1
 modified_at: 18.1.2018
 no_review: 1
-julkaisu: 21.1.2018
+julkaisu: 22.1.2018
 ---
 
 ![Laskin](../img/laskin.png "Laskin"){: style="display: block; margin: auto; margin-top: 10px; width: 600px;"}

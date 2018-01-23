@@ -7,7 +7,7 @@ exercise_upload_id: # 370648
 kesken: 1
 modified_at: 18.1.2018
 no_review: 1
-julkaisu: 23.1.2018
+julkaisu: 24.1.2018
 ---
 
 

@@ -9,7 +9,7 @@ no_review: 1
 Tämä Moodlessa oleva [sarja monivalintatehtäviä][quiz] on luonteva suorittaa
 ohjelmointitehtävien jälkeen. Kysymyksiin vastaaminen oletettavasti edelyttää
 pienten kokeilujen tekemistä aikaisempien tehtävien ratkaisuilla. Saattaa olla,
-että kokeiluja ei pysty tekemään tentin vastaamiajan puitteissa, joten
+että kokeiluja ei pysty tekemään tentin vastaamisajan puitteissa, joten
 ensimmäinen vastaamiskerta mennee kysymyksiin tutustumiseen.
 
 [quiz]: https://moodle2.tut.fi/mod/quiz/view.php?id=371316  

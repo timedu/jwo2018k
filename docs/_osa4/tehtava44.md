@@ -1,6 +1,6 @@
 ---
 layout: exercise_page
-title: "Tehtävä 4.3: Handlebars-laskin (2p)"
+title: "Tehtävä 4.4: Ajax-laskin (2p)"
 exercise_template_name:
 exercise_discussion_id:
 exercise_upload_id:

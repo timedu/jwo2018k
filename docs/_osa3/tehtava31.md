@@ -4,7 +4,7 @@ title: "Tehtävä 3.1: Tilauslomake (2p)"
 exercise_template_name: W3E01.Tilauslomake
 exercise_discussion_id: 92458
 exercise_upload_id: 370619
-modified_at: 21.1.2018
+modified_at: 26.1.2018
 ---
 
 [Tehtävässä 1.6](../../osa1/tehtava16) rakennettiin yksinkertainen tilauslomake
@@ -165,10 +165,11 @@ Seuraavilla luokilla erotetaan lomake-elementtejä pystysuunnassa hieman
 toisistaan sekä tuotetaan vaakasuuntainen viiva erottamaan sivun alatunniste
 (footer) sen yläpuolisesta sisällöstä.
 
-* input- ja textarea-elementtejä sisältävillä "row"-elementeillä on myös "form-control"-luokka
+* input- ja textarea-elementtejä sisältävillä "row"-elementeillä on myös
+"<strike>form-control</strike> form-group"-luokka
 * footer-elementillä on "border" ja "border-bottom-0"-luokat
 
-Myös näihin liityvät testit löytyvät tehtäväpohjasta
+Myös näihin liityvät testit löytyvät tehtäväpohjasta.
 
 
 <br/>

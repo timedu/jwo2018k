@@ -3,7 +3,7 @@ layout: collection_index
 permalink: /:collection/index.html
 kesken: 1
 modified_at: 25.1.2018
-julkaisu 27.1.2018
+julkaisu: 27.1.2018
 ---
 
 

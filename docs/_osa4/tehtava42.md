@@ -6,5 +6,5 @@ exercise_discussion_id:
 exercise_upload_id:
 kesken: 1
 no_review: 1
-julkasu: 27.1.2018
+julkaisu: 27.1.2018
 ---

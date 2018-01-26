@@ -1,6 +1,6 @@
 ---
 layout: exercise_page
-title: "Tehtävä 4.5: Tilaukset (4p)"
+title: "Tehtävä 4.5: Tilaukset (2p)"
 exercise_template_name:
 exercise_discussion_id:
 exercise_upload_id:

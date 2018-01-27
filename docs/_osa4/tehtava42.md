@@ -2,9 +2,9 @@
 layout: exercise_page
 title: "Tehtävä 4.2: Express-laskin (2p)"
 exercise_template_name: W4E02.ExpressLaskin
-exercise_discussion_id:
-exercise_upload_id:
-julkaisu: 27.1.2018
+exercise_discussion_id: 93296
+exercise_upload_id: 371621
+modified_at: 27.1.2018
 ---
 
 Tässä jatketaan [edellsen tehtävän](../tehtava41) laskin-teemaa. Nyt rakennetaan

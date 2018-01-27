@@ -2,10 +2,9 @@
 layout: collection_index
 permalink: /:collection/index.html
 kesken: 1
-modified_at: 25.1.2018
-julkaisu: 27.1.2018
+modified_at: 27.1.2018
+julkaisu: täydennettynä myöhemmin
 ---
-
 
 
 > [Node.js][node] is a JavaScript runtime built on [Chrome's V8 JavaScript engine][v8]. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient. Node.js' package ecosystem, [npm][npm-site], is the largest ecosystem of open source libraries in the world.
@@ -25,32 +24,18 @@ julkaisu: 27.1.2018
 
 {% include exercises_list.md %}
 
+Palautus Moodleen viimeistään **7.2.2018 klo 23:55**
+
+### Lisätietoja
+
+* [Node.js][node]
+* [Express][express]
+* [Handlebars][handlebars]
+
+* [Palvelinohjelmointia JavaScriptillä - Node.js ja Express](http://web-selainohjelmointi.github.io/#21-Palvelinohjelmointia-JavaScriptillä---Node.js-ja-Express) (in Web-selainohjelmointi, Helsinki)
+* [Introduction to Node.js](https://www.edx.org/course/introduction-node-js-microsoft-dev283x) (edX)
+* [JavaScript templates with Handlebars][hb-lecture] (in *Responsive Web Design*, Coursera)
 
 
 
-{% comment %}
-
-Opintojakson tämä osa jatkaa [PHP][PHP]-teemaa, ja [edellisen osan](../osa3) tapaan materiaali löytyy [Viope-oppimisympäristön][viope] kurssilta *PHP-ohjelmoinnin perusteet (JWO2017k)*, josta nyt käsitellään lukuja 7-9. Esillä ovat *funktiot* ja *tiedostokäsittely* sekä *evästeet* ja *istunnot*. Tosin evästeisiin ja istuntoihin tukeudutaan vasta opintojakson soveveltavissa tehtävissä.
-
-[PHP]: http://php.net
-[viope]: https://moodle2.tut.fi/mod/url/view.php?id=315284
-
-
-<hr/>
-<small>
-[Tehtäväpohjat](https://moodle2.tut.fi/mod/folder/view.php?id=317813) &nbsp;
-[Keskustelu](https://moodle2.tut.fi/mod/forum/discuss.php?d=79570) &nbsp;
-[Katselmointipyyntö](https://moodle2.tut.fi/mod/url/view.php?id=314337) &nbsp;
-[Palautus katselmointiin](https://moodle2.tut.fi/mod/vpl/view.php?id=317152)
-</small>
-
-### Tehtävät
-
-Osa sisältää 10 tehtävää [Viope][viope]-materiaalin luvuista 7-9. Kaikkien tehtävien ratkaisu tuottaa yhteensä 22 pistettä. Enimmäissuoritukseen kuitenkin riittää 15 Viopen myöntämää pistettä, mikä saavutetaan valituista tehtävistä riippuen joko 7 tai 8 tehtävän ratkaisulla. [Viopen kurssi][viope] on avoinna tehtävien ratkaisemista varten 7.4.2017 asti[^2].
-
-[^2]: Kurssi on suljettuna lauantaina 1.4. n. klo 12:00 asti.
-
-<br/>
-
-
-{% endcomment %}
+[hb-lecture]: https://www.coursera.org/learn/responsive-web-design/lecture/pVzeZ/javascript-templates-with-handlebars

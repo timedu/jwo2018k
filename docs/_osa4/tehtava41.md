@@ -2,8 +2,8 @@
 layout: exercise_page
 title: "Tehtävä 4.1: Node-laskin (2p)"
 exercise_template_name: W4E01.NodeLaskin
-exercise_discussion_id:
-exercise_upload_id:
+exercise_discussion_id: 93295
+exercise_upload_id: 371620
 modified_at: 27.1.2018
 ---
 

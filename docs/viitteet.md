@@ -3,7 +3,7 @@ layout: site_page
 title: Viitteet
 permalink: /viitteet/index.html
 site_menu: 1
-modified_at: 12.1.2018
+modified_at: 27.1.2018
 ---
 
 
@@ -77,6 +77,9 @@ modified_at: 12.1.2018
 
 * [QUnit](http://qunitjs.com)
 * [Sinon.JS](http://sinonjs.org)
+* <http://chaijs.com>
+* <http://chaijs.com/plugins/chai-http/>
+* <https://mochajs.org>
 
 #### Muita viitteitä
 

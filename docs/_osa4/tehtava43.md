@@ -9,7 +9,7 @@ modified_at: 29.1.2018
 
 [Tehtävässä 3.2](../../osa3/tehtava32) rakennettiin selaimen päässä
 ajettava nelilaskin. Nyt laaditaan käyttöliittymältään likimain samanlainen
-laskin, mutta sen taustalla oleva arkkitehtuuri erilainen.
+laskin, mutta sen taustalla oleva arkkitehtuuri on erilainen.
 
 ![Laskin](../img/handlebars_laskin.png "Laskin"){: style="display: block; margin: auto; margin-top: 10px; width: 600px;"}
 

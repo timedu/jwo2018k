@@ -34,7 +34,8 @@ Kuudes tehtävä sisältää ohjelmointitehtäviin liityviä monivalintakysymyks
 
 {% include exercises_list.md %}
 
-Ratkaisut tehtäviin tulee palauttaa Moodleen viimeistään **31.1.2018 klo 23:55**
+Ratkaisut tehtäviin tulee palauttaa Moodleen viimeistään <strike>31.1.2018</strike>
+**2.2.2018 klo 23:55**
 ("Moodlen aikaa"). Tehtäväkuvausten yhteydessä on linkit ao. palautustyökaluihin.
 
 Kaikki ohjelmointitehtävät perustuvat *Bootstrap:in* käyttöön. Jokaisessa on

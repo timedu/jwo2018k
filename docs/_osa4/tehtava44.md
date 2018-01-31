@@ -4,7 +4,7 @@ title: "Tehtävä 4.4: Ajax-laskin (2p)"
 exercise_template_name: W4E04.AjaxLaskin
 exercise_discussion_id: 93298
 exercise_upload_id: 371623
-modified_at: 29.1.2018
+modified_at: 31.1.2018
 ---
 
 
@@ -34,7 +34,7 @@ Esim. *Kuvan 1* tilanteessa koodi lähettää pyynnön osoitteeseen `/api?lasku=
 oleva, polkuun `/api` liittyvä, funktio. `lasku`-parametrin arvona voi olla
 `add`, `sub`, `mul` tai `div.`
 
-Tehtävä ratkaistaan[^1] täydentämällä tiedostoja `laskin.html` ja `laskuri.js`.
+Tehtävä ratkaistaan[^1] täydentämällä tiedostoja `code.js` ja `laskuri.js`.
 **Palauta** tiedostot, kun laskin toimii odotetusti.
 
 [^1]: Kuten edellisissä tehtävissä myös tässä, sovelluksen toiminta edellyttää ulkopuolisia moduuleja, jotka voidaan ladata komennolla/menuvalinnalla `npm install`.  

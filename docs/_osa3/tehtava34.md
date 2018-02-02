@@ -4,7 +4,7 @@ title: "Tehtävä 3.4: Taskit (2p)"
 exercise_template_name: W3E04.Taskit
 exercise_discussion_id: 92462
 exercise_upload_id: 370647
-modified_at: 23.1.2018
+modified_at: 2.2.2018
 ---
 
 Tehtäväpohjassa on käyttöliittymältään oheisen kuvan mukainen tehtävien
@@ -56,4 +56,6 @@ Ratkaisussa saatetaan tarvita esim. seuraavia jQuery-metodeja:
 [remove](http://api.jquery.com/remove/),
 [text](http://api.jquery.com/text/),
 [toggleClass](http://api.jquery.com/toggleClass/),
-[val](http://api.jquery.com/val/).
+[val](http://api.jquery.com/val/),
+[has](http://api.jquery.com/has/),
+[length](http://api.jquery.com/length/).

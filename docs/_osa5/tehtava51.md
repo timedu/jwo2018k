@@ -2,8 +2,8 @@
 layout: exercise_page
 title: "Tehtävä 5.1: Viestit (2p)"
 exercise_template_name: W5E01.Viestit
-exercise_discussion_id:
-exercise_upload_id:
+exercise_discussion_id: 94003
+exercise_upload_id: 372511
 modified_at: 3.2.2018
 ---
 

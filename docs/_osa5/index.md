@@ -2,10 +2,9 @@
 layout: collection_index
 permalink: /:collection/index.html
 kesken: 1
-julkaisu: tehtäväkuvausten julkaisemisen jälkeen
-modified_at: 2.2.2018
+julkaisu: täsmennettynä tehtäväkuvausten julkaisemisen jälkeen
+modified_at: 3.2.2018
 ---
-
 
 
 
@@ -16,7 +15,14 @@ modified_at: 2.2.2018
 
 ### Tehtävät
 
+Osa sisältää kuusi tehtävää, josta viisi ensimmäistä ovat ohjelmointityyppisiä.
+Kuudes tehtävä sisältää ohjelmointitehtäviin läheisesti liityviä monivalintakysymyksiä.
+
 {% include exercises_list.md %}
+
+Ratkaisut tehtäviin tulee palauttaa Moodleen viimeistään  **14.2.2018 klo 23:55**
+("Moodlen aikaa"). Tehtäväkuvausten yhteydessä on linkit ao. palautustyökaluihin.
+
 
 ### Lisätietoja
 

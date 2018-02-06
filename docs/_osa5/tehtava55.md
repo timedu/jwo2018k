@@ -1,13 +1,10 @@
 ---
 layout: exercise_page
 title: "Tehtävä 5.5: VatsEdit (2p)"
-exercise_template_name: # W5E05.VatsEdit
-exercise_discussion_id: # 94007
-exercise_upload_id: # 372708
-kesken: 1
-julkaisu: 6.2.2018
-modified_at: 5.2.2018
-no_review: 1
+exercise_template_name: W5E05.VatsEdit
+exercise_discussion_id: 94007
+exercise_upload_id: 372708
+modified_at: 6.2.2018
 ---
 
 Täydennä [edellisen tehtävän](../tehtava54) ratkaisua siten, että
@@ -27,7 +24,14 @@ viestin muutoksen tai poiston (*Kuva 2*).
 <small>Kuva 2.</small>
 
 
-Ratkaise tehtävä täydentämällä tehtäväpohjan tiedostoja `vatsi.js` ja `messages.html`,
+Ratkaise tehtävä täydentämällä tehtäväpohjan tiedostoja
+`vatsi.js`[^vatsi] ja `messages.html`[^messages],
 ja **palauta** ne, kun sovellus toimii odotetusti.
 
-### Vihjeitä ja lisätietoja
+[^vatsi]: Tänne lisätään viestin muutokseen ja poistoon liittyvä tietokantakäsittely ja kopioidaan tehtävissä 5.3 ja 5.4 tehty koodi.
+[^messages]: Tänne lisätään painike, jota klikkaamalla muutos-/poistolomakkeen ikkuna saadaan esiin ja kopioidaan tehtävissä 5.3 ja 5.4 laaditut täydennykset.
+
+
+<br/>
+
+Alaviitteet

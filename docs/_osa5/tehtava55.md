@@ -10,6 +10,13 @@ modified_at: 5.2.2018
 no_review: 1
 ---
 
+Täydennä [edellisen tehtävän](../tehtava54) ratkaisua siten, että
+käyttäjä voi sovelluksen avulla muokata ja poistaa lähettämiään viestejä.
+Selaimen esittämässä viestiluettelossa käyttäjän lähettämien viestien vieressä
+on nyt painike (*Kuva 1*). Sitä klikkaamalla tulee esiin ikkuna, jossa voi suorittaa
+viestin muutoksen tai poiston (*Kuva 2*).
+
+
 ![Viestit](../img/vats_edit_list.png "Viestit"){: style="display: block; margin: auto; margin-top: 10px; width: 600px;"}
 
 <small>Kuva 1.</small>
@@ -20,9 +27,7 @@ no_review: 1
 <small>Kuva 2.</small>
 
 
-
-
-Ratkaise tehtävä täydentämällä tehtäväpohjan tiedostoja `vatsi.js` ja `edit.html`,
+Ratkaise tehtävä täydentämällä tehtäväpohjan tiedostoja `vatsi.js` ja `messages.html`,
 ja **palauta** ne, kun sovellus toimii odotetusti.
 
 ### Vihjeitä ja lisätietoja

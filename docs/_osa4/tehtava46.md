@@ -29,7 +29,7 @@ Eräissä monivalintakysymyksissä tiedustellaan tietyssä tilanteissa selaimen 
 <small>Kuva 1. Eläimet -sivun hakuun liittyvät pyynnöt.</small>
 
 Esimerkki liittyy [Tehtävän 2.1](../../osa2/tehtava21) `index.html` -sivuun,
-joka sisältää kolme kuvaa. Siten sivun lataaminen edellyttää neljää pyyntöä. Web-työkalut esimerkkiympäristössä on saatu selaimen ikkuvaan *Työkalut*-valikosta valinnalla *Web-työkalut>Toggle Tools*. Työkalupaletista on sitten valittu *Network* ja vielä *All*, joka tarkoittaa, että ollaan kiinnostuneita kaikenlaisiin kohteisiin liittyvistä pyynnöistä[^1]. *All*-sanan vieressä olevan *roskis*-merkin klikkaus tyhjentää pyyntöluettelon.
+joka sisältää kolme kuvaa. Siten sivun lataaminen edellyttää neljää pyyntöä. Web-työkalut esimerkkiympäristössä on saatu selaimen ikkunaan *Työkalut*-valikosta valinnalla *Web-työkalut>Toggle Tools*. Työkalupaletista on sitten valittu *Network* ja vielä *All*, joka tarkoittaa, että ollaan kiinnostuneita kaikenlaisiin kohteisiin liittyvistä pyynnöistä[^1]. *All*-sanan vieressä olevan *roskis*-merkin klikkaus tyhjentää pyyntöluettelon.
 
 [^1]: Tutki vaikka, millaisia pyyntöjä aiheutuu, kun otat selaimeen sivun `www.tut.fi`.
 

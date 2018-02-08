@@ -69,7 +69,7 @@ sovellus, joka muodostuu käyttäjän kannalta kolmesta sivusta, joiden yhteiset
 on erotettu kaikkien sivupohjien hyödyntämäksi layoutiksi. Tehtävän pohjakoodiin
 on myös upotettu esimerkki sivupohjissa käytettävissä olevasta silmukkarakenteesta.
 
-Ratkaisut tehtäviin tulee palauttaa Moodleen viimeistään  **7.2.2018 klo 23:55**
+Ratkaisut tehtäviin tulee palauttaa Moodleen viimeistään  <strike>7.2.2018</strike> **9.2.2018 klo 23:55**
 ("Moodlen aikaa"). Tehtäväkuvausten yhteydessä on linkit ao. palautustyökaluihin.
 
 ### Lisätietoja

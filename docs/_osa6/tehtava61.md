@@ -1,10 +1,16 @@
 ---
 layout: exercise_page
-title: "Tehtävä 6.1: Ascii-animaatio, vaihe 1 (5p)"
-exercise_template_name: W6E01.AsciiAnimaatioVaihe1
-exercise_discussion_id: 80861
-exercise_upload_id: 319707
+title: "Tehtävä 6.1: Elokuva-arviot, vaihe 1 (3p)"
+exercise_template_name:
+exercise_discussion_id:
+exercise_upload_id:
+no_review: 1
+kesken: 1
 ---
+
+Tehtävä 6.1
+
+{% comment %}
 
 Laadi selaimessa toimiva ascii-animaatioiden katselusovellus. Tehtäväpohjassa on sovelluksen html/css-käyttöliittymä, jota täydennnetään JavaScript-koodilla halutun toiminnallisuuden aikaansaamiseksi. Pohja sisältää myös joukon valmiita animaatioita.
 
@@ -140,7 +146,7 @@ Tehtävän [lähteenä käytetty spesifikaatio][speksi] löytyy Moodlesta.
 
 
 <br/><small>
-Tehtävän lähde: Homework Assignment - ASCIImation.<br/> 
+Tehtävän lähde: Homework Assignment - ASCIImation.<br/>
 [Web Programming][cse154], University of Washington, Computer Science & Engineering.<br/>
 Copyright © Marty Stepp / Jessica Miller, licensed under Creative Commons Attribution 2.5 License.
 </small>
@@ -149,3 +155,5 @@ Copyright © Marty Stepp / Jessica Miller, licensed under Creative Commons Attri
 
 [cse154]:https://courses.cs.washington.edu/courses/cse154/
 
+
+{% endcomment %}

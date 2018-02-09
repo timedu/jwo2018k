@@ -1,10 +1,17 @@
 ---
 layout: exercise_page
-title: "Tehtävä 6.3: Liukupalapeli (8p)"
-exercise_template_name: W6E03.LiukupalapeliVaihe1
-exercise_discussion_id: 80863
-exercise_upload_id: 319710
+title: "Tehtävä 6.3: Liukupalapeli, vaihe 1 (3p)"
+exercise_template_name: # W6E03.LiukupalapeliVaihe1
+exercise_discussion_id:
+exercise_upload_id:
+no_review: 1
+kesken: 1
 ---
+
+Tehtävä 6.3
+
+
+{% comment %}
 
 > The Fifteen Puzzle (also called the Sliding Puzzle) is a simple classic game consisting of a 4×4 grid of numbered squares with one square missing. The object of the game is to arrange the tiles into numerical order by repeatedly sliding a square that neighbors the missing square into its empty space.
 
@@ -33,8 +40,8 @@ Tehtäväpohjan tiedostossa `js/code.js` on kuvattu eräs, *Kuvan 3* kutsukaavio
 ### Vihjeitä ja lisätietoja
 
 Pohjakoodin tiedostossa `index.html` on poiskommentoituna merkkaus, joka vastaa pelialueen tilaa sivun latauksen jälkeen. Kommentit voi avata, jos tarvittavan css-täydennyksen laatii ennen JavaScript-koodia.
- 
-Seuraavat [document][document] -objektin metodit saattavat olla ratkaisussa tarpeellisia: [createElement][createElement], [getElementById][getElementById] ja [querySelectorAll][querySelectorAll]. 
+
+Seuraavat [document][document] -objektin metodit saattavat olla ratkaisussa tarpeellisia: [createElement][createElement], [getElementById][getElementById] ja [querySelectorAll][querySelectorAll].
 Myös [käyttöliittymäelementtien][Element] seuraavia metodeja ja ominaisuuksia voidaan tarvita: [appendChild][appendChild], [className][className], [firstElementChild][firstElementChild], [id][id], [nextElementSibling][nextElementSibling], [parentElement][parentElement], [style][style].left, [style][style].top ja [textContent][textContent].
 Muita käyttökelpoisia apuneuvoja tässä voivat olla [parseInt][parseInt] sekä [Math][Math]-objektin [floor][floor] ja [random][random].
 
@@ -66,7 +73,7 @@ Tehtävän [lähteenä käytetty spesifikaatio][speksi] löytyy Moodlesta.
 
 
 <br/><small>
-Tehtävän lähde: Homework Assignment - Fifteen Puzzle.<br/> 
+Tehtävän lähde: Homework Assignment - Fifteen Puzzle.<br/>
 [Web Programming][cse154], University of Washington, Computer Science & Engineering.<br/>
 Copyright © Marty Stepp / Jessica Miller, licensed under Creative Commons Attribution 2.5 License.
 </small>
@@ -75,4 +82,4 @@ Copyright © Marty Stepp / Jessica Miller, licensed under Creative Commons Attri
 
 [cse154]:https://courses.cs.washington.edu/courses/cse154/
 
-
+{% endcomment %}

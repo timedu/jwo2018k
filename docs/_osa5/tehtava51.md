@@ -4,7 +4,7 @@ title: "Tehtävä 5.1: Viestit (2p)"
 exercise_template_name: W5E01.Viestit
 exercise_discussion_id: 94003
 exercise_upload_id: 372511
-modified_at: 3.2.2018
+modified_at: 8.2.2018
 ---
 
 Perusta tehtäväpohjan `data`-kansioon *SQLite*-tietokanta `viestikanta.db` ja
@@ -125,13 +125,26 @@ const db = new sqlite3.Database('./data/viestikanta.db');
 
 {% endhighlight %}
 
-Viestit voidaan lukea tietokannasta [rajapinnan][api] [all][all]- tai [each][each]-metodeilla[^esim].
+Viestit voidaan lukea tietokannasta [rajapinnan][api] [all][all]- tai [each][each]-metodeilla.
+Seuraava ote on poimittu *sqlite3*-rajapinnan esimerkistä [simple-chaining.js][simple-chaining]:
 
 [all]: https://github.com/mapbox/node-sqlite3/wiki/API#databaseallsql-param--callback
 [each]: https://github.com/mapbox/node-sqlite3/wiki/API#databaseeachsql-param--callback-complete
 [api]: https://github.com/mapbox/node-sqlite3/wiki/API
 
-[^esim]: *all*-metodia on käytetty eräässä rajapintamoduulin [käyttöesimerkissä][simple-chaining]
+
+
+{% highlight js %}
+
+db.all("SELECT rowid AS id, info FROM lorem", function(err, rows) {
+  rows.forEach(function (row) {
+    console.log(row.id + ": " + row.info);
+  });
+});
+
+{% endhighlight %}
+
+
 
 [simple-chaining]: https://github.com/mapbox/node-sqlite3/blob/master/examples/simple-chaining.js
 

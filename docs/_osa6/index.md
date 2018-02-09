@@ -2,11 +2,22 @@
 layout: collection_index
 permalink: /:collection/index.html
 kesken: 1
+julkaisu: 10.2.2018 (osan ensimmäiset tehtävät)
 ---
 
 JWO2018k / Osa 6
 
+
+
 {% comment %}
+
+### Tehtävät
+
+
+{% include exercises_list.md %}
+
+
+
 
 Kurssin edellisessä kolmessa osassa on ollut käsittelyn alla palvelinpäässä tulkittava web-sovelluksen ohjelmakoodi. Tässä osassa palataan selainpäähän. Tehtävissä laaditaan JavaScript -koodia, jonka tulkitsee web-selain. Tehtävissä on esillä mm. selainsovelluksissa yleisesti esiintyvä ns. *callback* -funktion käyttö: funktio annetaan toisen funktion kutsun parametrina. Tehtävissä käsitellään myös selaimeen ladatun dokumentin rakennetta *dom* -rajapinnan kautta. Tehtävien pohjakoodi esittää tavan, miten JavaScriptilla voidaan muodostaa dataa ja funktiota kapseloivia moduuleja.
 

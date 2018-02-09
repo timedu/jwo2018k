@@ -6,7 +6,12 @@ kesken: 1
 
 JWO2018k / Osa 7
 
+
+
 {% comment %}
+
+{% include exercises_list.md %}
+
 
 Web-sovelluksissa palvelimelle tehtävät pyynnöt ovat toisistaan erillisiä siten, että tietojen siirrossa selaimen ja palvelimen välillä käytetty protokolla ei tunnista eri pyyntöjen yhteenkuuluvuutta. Mutta esim. verkkokauppasovellusten käyttäytymistä seuraamalla voidaan todeta, että jollakin tavalla pyynnöt saadaan kytkettyä toisiinsa: samaan ostoskoriin voidaan lisätä tuotteita eri pyynnöillä ja ostoskorin sisältö säilyy pyyntöjen välillä.
 

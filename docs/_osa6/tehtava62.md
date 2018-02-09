@@ -1,10 +1,17 @@
 ---
 layout: exercise_page
-title: "Tehtävä 6.2: Ascii-animaatio, vaihe 2 (2p)"
-exercise_template_name: W6E02.AsciiAnimaatioVaihe2
-exercise_discussion_id: 80862
-exercise_upload_id: 319709
+title: "Tehtävä 6.2: Elokuva-arviot, vaihe 2 (3p)"
+exercise_template_name:
+exercise_discussion_id:
+exercise_upload_id:
+no_review: 1
+kesken: 1
 ---
+
+
+Tehtävä 6.2
+
+{% comment %}
 
 Täydennä [tehtävän 6.1](../tehtava61) ratkaisua siten, että animaation saa pyörimään myös  taasepäin, sekä niin, että tekstialueen fontin koon voi antaa ennalta määriteltyjen arvojen ohella myös suoraan lukuarvona.
 
@@ -31,7 +38,7 @@ Tehtäväpohjan merkkaukseen on animaation suunnan muutosta varten lisätty *Per
 
 
 <br/><small>
-Tehtävän lähde: Homework Assignment - ASCIImation, Extra Features.<br/> 
+Tehtävän lähde: Homework Assignment - ASCIImation, Extra Features.<br/>
 [Web Programming][cse154], University of Washington, Computer Science & Engineering.<br/>
 Copyright © Marty Stepp / Jessica Miller, licensed under Creative Commons Attribution 2.5 License.
 </small>
@@ -40,3 +47,5 @@ Copyright © Marty Stepp / Jessica Miller, licensed under Creative Commons Attri
 
 [cse154]:https://courses.cs.washington.edu/courses/cse154/
 
+
+{% endcomment %}

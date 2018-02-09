@@ -1,0 +1,11 @@
+---
+layout: exercise_page
+title: "Tehtävä 7.5: Tehtävälista, vaihe 5 (3p)"
+exercise_template_name:
+exercise_discussion_id:
+exercise_upload_id:
+kesken: 1
+no_review: 1
+---
+
+Tehtävä 7.5

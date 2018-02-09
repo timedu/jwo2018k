@@ -1,10 +1,16 @@
 ---
 layout: exercise_page
-title: "Tehtävä 7.3: Tehtävälista, Ajax (5p)"
-exercise_template_name: 
-exercise_discussion_id: 81427
-exercise_upload_id: 320614
+title: "Tehtävä 7.3: Tehtävälista, vaihe 3 (3p)"
+exercise_template_name:
+exercise_discussion_id:
+exercise_upload_id:
+kesken: 1
+no_review: 1
 ---
+
+Tehtävä 7.3
+
+{% comment %}
 
 Laadi [oheista projektipohjaa][pohja] täydentämällä [edellisen tehtävän](../tehtava72) kanssa samanlainen tehtävälista-sovellus kuitenkin niin, että *Todolist* -sivua ei ladata selaimeen uudelleen tehtävän lisäyksen ja poiston jälkeen. Ratkaisussa tieto tehtävälistan muutoksista välitetään palvelimelle JavaScriptin avulla. Tietokantaan tehdyn päivityksen jälkeen JavaScript myös muokkaa selaimessa olevaa dokumenttia vastaamaan tietokannan uutta tilaa. Seuraava kaavio esittää sovelluksen osaa, joka on erilainen verrattuna [tehtävään 7.2](../tehtava72).
 
@@ -36,7 +42,7 @@ Tehtävän lisäyksen tehtävälistaan toteuttaa funktio `doInsert` palvelun `do
 #### logout -toiminto
 
 
-Tässä tietokantakäsittelyyn liittyvät toiminnot rakennetaan siten, pyynnöt välitetään palvelimelle JavaScriptilla käyttäen `XMLHttpRequest`-objektia. Tehtäväpohjassa on valmiina tällä periaatteella toteutettu logout -toiminto. 
+Tässä tietokantakäsittelyyn liittyvät toiminnot rakennetaan siten, pyynnöt välitetään palvelimelle JavaScriptilla käyttäen `XMLHttpRequest`-objektia. Tehtäväpohjassa on valmiina tällä periaatteella toteutettu logout -toiminto.
 
 Käyttäjä käynnistää logout -toiminnon klikkaamalla sivulla olevaa linkkiä:
 
@@ -82,7 +88,7 @@ function doLogout(e) {
 <small>Listaus 2. Ote moduulista *todolist.js*</small>
 
 
-Pyyntöä varten muodostetaan `XMLHttpRequest` -objekti, jonka `open` -metodilla määritellään pyynnön tyyppi ja osoite sekä se, tapahtuuko pyyntö asykronisesti (`true`) vai synkronisesti. Objektin `onload`-ominaisuuden[^1] arvoksi asetetaan funktio, joka suoritetaan, kun palvelimelta saadaan pyyntöön vaste. Pyyntö lähetetään `XMLHttpRequest` -objektin `send`-metodilla, jolla tässä ei ole parametria, koska pyyntöön ei liity palvelimelle välitettävää dataa. 
+Pyyntöä varten muodostetaan `XMLHttpRequest` -objekti, jonka `open` -metodilla määritellään pyynnön tyyppi ja osoite sekä se, tapahtuuko pyyntö asykronisesti (`true`) vai synkronisesti. Objektin `onload`-ominaisuuden[^1] arvoksi asetetaan funktio, joka suoritetaan, kun palvelimelta saadaan pyyntöön vaste. Pyyntö lähetetään `XMLHttpRequest` -objektin `send`-metodilla, jolla tässä ei ole parametria, koska pyyntöön ei liity palvelimelle välitettävää dataa.
 
 
 [^1]: `onload` -ominaisuuden sijaan voi käyttää myös `onreadystatechange` -ominaisuutta, mutta tällöin on huomioitava pyynnön käsittelyn tila ja status (ks. esim. [ao. kohta][sec72] Web-selainohjelmointi -materiaalista).
@@ -90,7 +96,7 @@ Pyyntöä varten muodostetaan `XMLHttpRequest` -objekti, jonka `open` -metodilla
 [sec72]: http://web-selainohjelmointi.github.io/#7.2-Datan-hakeminen-palvelimelta
 
 
-Palvelimelta pyyntöön saatava vaste löytyy `XMLHttpRequest` -objektin `responseText` -ominaisuudesta. Tässä vaste on JSON -muodossa[^2] oleva merkkijono, jonka muunnetaan JavaScript -objektiksi `JSON` -olion `parse` -metodilla. Pyynnön käsittelevän palvelun palauttama vaste on sellainen, että sen `ok` -ominaisuudessa on totuusarvo (`true`/`false`), joka ilmoittaa, onko käsittely palvelimella tapahtunut onnistuneesti. 
+Palvelimelta pyyntöön saatava vaste löytyy `XMLHttpRequest` -objektin `responseText` -ominaisuudesta. Tässä vaste on JSON -muodossa[^2] oleva merkkijono, jonka muunnetaan JavaScript -objektiksi `JSON` -olion `parse` -metodilla. Pyynnön käsittelevän palvelun palauttama vaste on sellainen, että sen `ok` -ominaisuudessa on totuusarvo (`true`/`false`), joka ilmoittaa, onko käsittely palvelimella tapahtunut onnistuneesti.
 
 
 [^2]: Ks. esim. kohta [JSON][sec71] Web-selainohjelmointi -materiaalista.
@@ -285,7 +291,7 @@ try {
 <small>Kuva 2. Tehtävän talletus tietokantaan</small>
 
 
-Tiedon talletuksen toteuttaa ao. painikkeen click-tapahtumaan sidotu `doInsert` -funktio välittäen pyynnön palvelulle `doInsert.php`. Palvelu palauttaa tietokantaan lisätyn rivin [JSON][js_json]-muotoisena merkkijonona. Pohjakoodin (*Listaus 8*) `doInsert` -funktiossa määtitellyssä `item` -muuttujassa on merkkijono, joka muodoltaan vastaa palvelun palauttamaa tietokantaan talletettua riviä. Funktio muuntaa merkkijojon JavaScript-objektiksi ja muodostaa dokumenttiin tarvittavat elementit kutsumalle pohjakoodissa valmiina olevaa funktiota `createTodoElement` sekä tyhjentää  tekstikentän, johon käyttäjä syöttää lisättävän datan. 
+Tiedon talletuksen toteuttaa ao. painikkeen click-tapahtumaan sidotu `doInsert` -funktio välittäen pyynnön palvelulle `doInsert.php`. Palvelu palauttaa tietokantaan lisätyn rivin [JSON][js_json]-muotoisena merkkijonona. Pohjakoodin (*Listaus 8*) `doInsert` -funktiossa määtitellyssä `item` -muuttujassa on merkkijono, joka muodoltaan vastaa palvelun palauttamaa tietokantaan talletettua riviä. Funktio muuntaa merkkijojon JavaScript-objektiksi ja muodostaa dokumenttiin tarvittavat elementit kutsumalle pohjakoodissa valmiina olevaa funktiota `createTodoElement` sekä tyhjentää  tekstikentän, johon käyttäjä syöttää lisättävän datan.
 
 Ratkaisun `doInsert` -funktiossa pyyntö välitetään palvelulle `XMLHttpRequest` -objektille *listauksen 2* esittämään tapaan. Tässä kuitenkin palvelimelle välitetään tietoa, joten `send`-metodin kutsulla tulee olla muodossa `nimi=arvo` oleva parametri (merkkijono). Tämän lisäksi on määriteltävä välitettävän datan muoto: `application/x-www-form-urlencoded`[^3]. (ks. [vastaava esimerkki][esim])
 
@@ -311,7 +317,7 @@ function doInsert() {
 <small>Listaus 8. Ote pohjakoodin moduulista *todolist.js*</small>
 
 
-Tämän tehtävän ratkaisun tuottama moduuli `doInsert.php` on tietokantakäsittyn osalta samanlainen kuin [tehtävän 7.2](../tehtava72) vastaava. Moduulit ovat erilaisia siten, että tässä `doInsert.php` palauttaan [JSON][js_json] -muotoisen datan kun taas [edellisessä tehtävässä](../tehtava72) moduuli palauttaa selaimelle ohjeen ladata tietty sivu. 
+Tämän tehtävän ratkaisun tuottama moduuli `doInsert.php` on tietokantakäsittyn osalta samanlainen kuin [tehtävän 7.2](../tehtava72) vastaava. Moduulit ovat erilaisia siten, että tässä `doInsert.php` palauttaan [JSON][js_json] -muotoisen datan kun taas [edellisessä tehtävässä](../tehtava72) moduuli palauttaa selaimelle ohjeen ladata tietty sivu.
 
 Pohjakoodin (*Listaus 9*) `doInsert.php` palauttaa seuraavaa[^4]:
 
@@ -327,7 +333,7 @@ Pohjakoodin (*Listaus 9*) `doInsert.php` palauttaa seuraavaa[^4]:
 }
 ~~~
 
-Edellistä listausta vastaava tulos saadaan selaimeen kirjaamalla kehitysympäristössä osoitekenttään `http://localhost:8000/php/doInsert.php`. Jos pyyntö tehdään `XMLHttpRequest` -objektilla, sama saadaan `responseText` -ominaisuuden arvoksi. 
+Edellistä listausta vastaava tulos saadaan selaimeen kirjaamalla kehitysympäristössä osoitekenttään `http://localhost:8000/php/doInsert.php`. Jos pyyntö tehdään `XMLHttpRequest` -objektilla, sama saadaan `responseText` -ominaisuuden arvoksi.
 
 
 
@@ -389,7 +395,7 @@ function reply($data) {
 
 
 <br/><small>
-Tehtävän lähteet: Homeworks [To-Do List][todo] & [To-Do List Extra Features][extra].<br/> 
+Tehtävän lähteet: Homeworks [To-Do List][todo] & [To-Do List Extra Features][extra].<br/>
 [Web Programming][cse154], University of Washington, Computer Science & Engineering.<br/>
 Copyright © Marty Stepp / Jessica Miller, licensed under Creative Commons Attribution 2.5 License.
 </small>
@@ -402,4 +408,4 @@ Copyright © Marty Stepp / Jessica Miller, licensed under Creative Commons Attri
 
 <br/>
 
-
+{% endcomment %}

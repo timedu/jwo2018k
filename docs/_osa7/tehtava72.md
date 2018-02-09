@@ -1,10 +1,16 @@
 ---
 layout: exercise_page
-title: "Tehtävä 7.2: Tehtävälista, SQL (5p)"
-exercise_template_name: 
-exercise_discussion_id: 81426
-exercise_upload_id: 320612
+title: "Tehtävä 7.2: Tehtävälista, vaihe 2 (3p)"
+exercise_template_name:
+exercise_discussion_id:
+exercise_upload_id:
+kesken: 1
+no_review: 1
 ---
+
+Tehtävä 7.2
+
+{% comment %}
 
 Laadi [oheista projektipohjaa][pohja] täydentämällä [edellisen tehtävän](../tehtava71) kanssa samanlainen tehtävälista-sovellus kuitenkin niin, että tehtävälistat talletetaan tiedostojen sijaan *relaatiotietokantaan*. Ratkaisussa tietokantaa käsitteleviä ja tässä rakennettavia moduuleja ovat `prepareTodolist.php`, `doInsert.php` ja `doDelete.php`. Moduulin `prepareStart.php` voi kopioida sellaisenaan edellisen tehtävän ratkaisusta.
 
@@ -13,7 +19,7 @@ Laadi [oheista projektipohjaa][pohja] täydentämällä [edellisen tehtävän](.
 
 #### Tietokannasta
 
-Valmis *SQLite*-relaatiotietokanta sijaisee projektipohjan `data`-hakemistossa nimellä `todos.sqlite`. Hakemistossa on myös skripti `create_database.php`, josta selviää käytettävän taulun rakenne ja, jonka avulla tietokanta voidaan perustaa tarvittaessa uudelleen[^1]. 
+Valmis *SQLite*-relaatiotietokanta sijaisee projektipohjan `data`-hakemistossa nimellä `todos.sqlite`. Hakemistossa on myös skripti `create_database.php`, josta selviää käytettävän taulun rakenne ja, jonka avulla tietokanta voidaan perustaa tarvittaessa uudelleen[^1].
 
 Moduulissa `php/commonCode.php` on vakion `TODOLIST` määrittely, joka viittaa käytettävään tietokantaan[^2]. Laadittavien moduulien rungoissa on vakiot, joiden sisältönä on tässä tarvittavat SQL-komennot.
 
@@ -77,7 +83,7 @@ Kehitysympäristössä Todolist -sivun pyyntö saadaan välitettyä palvelimelle
 
 <small>Listaus 2.</small>
 
-Tehtävän ratkaisussa vakiotiedot korvataan tietokannasta luetuilla tiedoilla. Tehtäväpohjassa määritelty vakio `SELECT_ITEMS` sisältää tässä tarvittava SQL-komennon. 
+Tehtävän ratkaisussa vakiotiedot korvataan tietokannasta luetuilla tiedoilla. Tehtäväpohjassa määritelty vakio `SELECT_ITEMS` sisältää tässä tarvittava SQL-komennon.
 
 Moduulissa `todolist.php` oleva koodi muodostaa sovelluksen käyttöliittymän. Seuravassa on moduulista ote, jossa käytetään tietokannasta luettuja tietoja sisältävää `$items` -muuttujaa:
 
@@ -110,14 +116,14 @@ Moduulissa `todolist.php` oleva koodi muodostaa sovelluksen käyttöliittymän. 
         <input name="index" value="3" type="hidden">
         <input value="Delete" type="submit">
     </form>
-    Tehtävä 1 
+    Tehtävä 1
 </li>
 <li>
     <form action="php/doDelete.php" method="post">
         <input name="index" value="6" type ="hidden">
         <input value="Delete" type="submit">
     </form>
-    Tehtävä 2 
+    Tehtävä 2
 </li>
 
 
@@ -134,7 +140,7 @@ Pyynnön seurauksena selaimelle palautuu siis html-dokumentti ilman php-koodia.
 {% highlight html %}
 
 <form action="./php/doInsert.php" method="post">
-    <input name="item" type="text" size="25" 
+    <input name="item" type="text" size="25"
            autofocus="autofocus" />
     <input type="submit" value="Add" />
 </form>
@@ -147,18 +153,18 @@ Pyynnön seurauksena selaimelle palautuu siis html-dokumentti ilman php-koodia.
 *Listauksen 5* esittämän lomakkeen submit -painikkeen klikkauksen seurauksena selain lähettää palvelimelle [`POST`][httpmethods] -tyyppisen pyynnön (*Kuva 2*), johon pakataan lomakkeen tekstikentän sisältämä data.  
 
 
-![Sekvenssikaavio](../img/ex72sequence-insert.png "Sekvenssikaavio"){: style="display: block; margin: auto; margin-top: 10px; width: 500px;"} 
+![Sekvenssikaavio](../img/ex72sequence-insert.png "Sekvenssikaavio"){: style="display: block; margin: auto; margin-top: 10px; width: 500px;"}
 
 <small>Kuva 2. Tehtävän talletus tietokantaan</small>
 
 
-Moduuli `doInsert.php` käsittelee pyynnön tallettaen vastaanottamansa datan tietokantaan, jonka jälkeen se välittää selaimelle ohjeen, että sen tulisi tehdä pyyntö osoitteeseen `/todolist.php`. Tämän jälkeen käsittely etenee samoin kuin *kuvassa 1*. 
+Moduuli `doInsert.php` käsittelee pyynnön tallettaen vastaanottamansa datan tietokantaan, jonka jälkeen se välittää selaimelle ohjeen, että sen tulisi tehdä pyyntö osoitteeseen `/todolist.php`. Tämän jälkeen käsittely etenee samoin kuin *kuvassa 1*.
 
 Datan vastaanotto on pohjakoodissa valmiina:
 
 {% highlight php %}
 
-<?php 
+<?php
 ...
 $new_item = filter_input(INPUT_POST, 'item', FILTER_SANITIZE_SPECIAL_CHARS);
 ...
@@ -170,7 +176,7 @@ $new_item = filter_input(INPUT_POST, 'item', FILTER_SANITIZE_SPECIAL_CHARS);
 <small>Listaus 6.</small>
 
 *Listauksessa 6* käytetään [`filter-input`][filter-input] -funktiota, jolla voi suodattaa syötteestä haitallisia merkkejä. Jos suodatusta ei tapahdu, listauksen sijoitus on sama kun `$new_item = $_POST['item']`. Valmis, uuden tehtävän tietokantaan tallettava SQL-komento, on pohjakoodin määrittelemässä vakiossa `INSERT_ITEM`. Käsittely voidaan ohjata Todolist -sivulle käyttäen pohjakoodissa määriteltyä (`commonCode.php`) funktiota `redirect_to`.
- 
+
 [filter-input]: http://php.net/manual/en/function.filter-input.php
 
 
@@ -217,19 +223,19 @@ $query = $db->query(
            'SELECT * '
          . 'FROM tuote '
          . 'ORDER BY nimi');         
-  
+
 ~~~
 
 Kyselyn tulos muuttujaan oletusmuodossa:
 
 ~~~
-$tuotteet = $query->fetchAll(); 
+$tuotteet = $query->fetchAll();
 ~~~
 
 Kyselyn tulos muuttujaan parametrin määrittelemässä muodossa:
 
 ~~~
-$tuotteet = $query->fetchAll(PDO::FETCH_ASSOC); 
+$tuotteet = $query->fetchAll(PDO::FETCH_ASSOC);
 ~~~
 
 Kyselyn suoritus kahdessa vaiheessa:
@@ -257,7 +263,7 @@ $query->execute([':nimi'=>'vasara']);
 Yhden rivin luku kyselyn palauttamasta tulosjoukosta:
 
 ~~~
-$tuote = $query->fetch(PDO::FETCH_ASSOC); 
+$tuote = $query->fetch(PDO::FETCH_ASSOC);
 ~~~
 
 Tuloksen palautus tiettynä objektina:
@@ -294,7 +300,7 @@ $stmt = $db->prepare(
            'UPDATE tuote  '
          . 'SET hinta = :hinta '
          . 'WHERE id = :id');
- 
+
 $stmt->execute([':id' => $id, ':hinta' => 11]);
 ~~~
 
@@ -304,7 +310,7 @@ Rivin poisto:
 $stmt = $db->prepare(
            'DELETE FROM tuote  '
          . 'WHERE id = :id');
- 
+
 $stmt->execute([':id' => $id]);
 ~~~
 
@@ -331,7 +337,7 @@ Esimerkkejä löytyy myös PHP:n [PDO-käsikirjasta][pdoman] eri metodien käsit
 
 
 <br/><small>
-Tehtävän lähteet: Homeworks [To-Do List][todo] & [To-Do List Extra Features][extra].<br/> 
+Tehtävän lähteet: Homeworks [To-Do List][todo] & [To-Do List Extra Features][extra].<br/>
 [Web Programming][cse154], University of Washington, Computer Science & Engineering.<br/>
 Copyright © Marty Stepp / Jessica Miller, licensed under Creative Commons Attribution 2.5 License.
 </small>
@@ -343,3 +349,5 @@ Copyright © Marty Stepp / Jessica Miller, licensed under Creative Commons Attri
 
 
 <br/>
+
+{% endcomment %}

@@ -5,6 +5,7 @@ exercise_template_name:
 exercise_discussion_id: 94008
 exercise_upload_id:
 no_review: 1
+modified_at: 8.2.2018
 ---
 
 Kuten edellinenkin vastaava tämä Moodlessa oleva [sarja monivalintatehtäviä][quiz] on luonteva suorittaa
@@ -35,7 +36,7 @@ Web-työkalut esimerkkiympäristössä on saatu selaimen ikkunaan *Työkalut*-va
 
 ![TUT-Cookies](../img/tut_cookies.png "TUT-Cookies"){: style="display: block; margin: auto; margin-top: 10px; width: 600px;"}
 
-<small>Kuva 2.</small>
+<small>Kuva 2. TTY:n sivuston etusivun asettamat evästeet.</small>
 
 
 Monivalintatehtävissä on myös esillä tilanne, jossa sovellukseen ([Tehtävän 5.3](../tehtava53) ratkaisu) liittyvä
@@ -44,12 +45,12 @@ sivu on ladattuna samanaikaisesti selaimen kahteen ikkunaan (*Kuva 3*).
 
 ![Two Browser Windows](../img/two_browser_windows.png "Two Browser Windows"){: style="display: block; margin: auto; margin-top: 10px; width: 600px;"}
 
-<small>Kuva 3.</small>
+<small>Kuva 3. Sama sivu esillä selaimen kahdessä ikkunassa.</small>
 
 
-Tehtävissä tarkastellaan myös tapausta, jossa sovelluksen sivu on samanaikaisesti kahdessa eri selaimessa (*Kuva 4*).
+Tehtävissä tarkastellaan myös tapausta, jossa sovelluksen sivu on samanaikaisesti kahdessa eri selaimessa (*Kuva 4*), esim. *Firefox* ja *Chrome*.
 
 
 ![Two Browsers](../img/two_browsers.png "Two Browsers"){: style="display: block; margin: auto; margin-top: 10px; width: 600px;"}
 
-<small>Kuva 4.</small>
+<small>Kuva 4. Sama sivu esillä kahdessa selaimessa.</small>

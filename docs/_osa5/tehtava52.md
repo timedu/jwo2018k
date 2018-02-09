@@ -4,7 +4,7 @@ title: "Tehtävä 5.2: Uusi viesti (2p)"
 exercise_template_name: W5E02.UusiViesti
 exercise_discussion_id: 94004
 exercise_upload_id: 372512
-modified_at: 3.2.2018
+modified_at: 8.2.2018
 ---
 
 Täydennä [edellisen tehtävän](../tehtava51) ratkaisua toiminnoilla, joilla
@@ -71,9 +71,26 @@ Tarvittavan tietokantamoduulin ohella nämä riippuvuudet on kuvattu tehtäväpo
 tiedostossa `package.json` ja siten ne asentuvat sovelluksen käyttöön komennolla
 `npm install`.
 
+Sovelluksessa viestien lisäyksen ja poiston voi hoitaan tietokantarajapinnan
+[run][run]-metodilla:
+
+~~~
+db.run(sql, params, function(err){
+  //
+});
+~~~
+
+Metodin käytöstä on esimerkkejä myös esim. *SQLite Tutoriaalissa*: [insert][insert], [delete][delete].
+
+{% comment %}
+
 Sovelluksessa viestien lisäyksen ja poiston voi hoitaan tietokantarajapinnan [prepare][prepare]- ja
 [run][run]-metodeilla (ks. [esimerkki][chaining]). Tosin *prepare*- metodia ei
 tässä välttämättä tarvita (ks. [insert][insert]- ja [delete][delete] -esimerkit).
+
+{% endcomment %}
+
+
 
 [run]: https://github.com/mapbox/node-sqlite3/wiki/API#databaserunsql-param--callback
 [prepare]: https://github.com/mapbox/node-sqlite3/wiki/API#databasepreparesql-param--callback

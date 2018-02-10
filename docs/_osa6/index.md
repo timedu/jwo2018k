@@ -2,7 +2,7 @@
 layout: collection_index
 permalink: /:collection/index.html
 kesken: 1
-julkaisu: 10.2.2018 (osan ensimmäiset tehtävät)
+julkaisu: 11.2.2018 (osan ensimmäiset tehtävät)
 ---
 
 JWO2018k / Osa 6

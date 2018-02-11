@@ -2,7 +2,7 @@
 layout: collection_index
 permalink: /:collection/index.html
 kesken: 1
-julkaisu: täsmennettynä tehtäväkuvausten julkaisemisen jälkeen
+julkaisu: täsmennettynä myöhemmin
 modified_at: 3.2.2018
 ---
 

@@ -2,19 +2,20 @@
 layout: collection_index
 permalink: /:collection/index.html
 kesken: 1
-julkaisu: 11.2.2018 (osan ensimmäiset tehtävät)
+julkaisu: täsmennettynä tehtäväkuvausten julkaisemisen jälkeen
 ---
 
-JWO2018k / Osa 6
 
-
-
-{% comment %}
 
 ### Tehtävät
 
 
 {% include exercises_list.md %}
+
+
+
+
+{% comment %}
 
 
 

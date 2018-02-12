@@ -4,8 +4,6 @@ title: "Tehtävä 6.1: Elokuva-arviot, vaihe 1"
 exercise_template_name: # (Moodlessa)
 exercise_discussion_id: 94967
 exercise_upload_id: 373508
-kesken: 1
-julkaisu: täsmennettynä 12.2.2018
 modified_at: 12.2.2018
 ---
 
@@ -15,171 +13,182 @@ sivun ulkoasu selaimessa on *Kuvien 1-3* mukainen.
 
 [pohja]: https://moodle2.tut.fi/mod/resource/view.php?id=373505
 [^pohja]: Tämän tehtävän [pohjakoodi][pohja] on Moodlessa.
-
-
 [Bootstrap]: https://getbootstrap.com
 
-Kuva 1.
-[Sivun yläosa](https://moodle2.tut.fi/mod/resource/view.php?id=373489)
+{% assign spacer = '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' %}
 
-Kuva 2.
-[Sivun alaosa](https://moodle2.tut.fi/mod/resource/view.php?id=373490)
-
-Kuva 3.
+{{spacer}} Kuva 1.
+[Sivun yläosa](https://moodle2.tut.fi/mod/resource/view.php?id=373489)   
+{{spacer}} Kuva 2.
+[Sivun alaosa](https://moodle2.tut.fi/mod/resource/view.php?id=373490)   
+{{spacer}} Kuva 3.
 [Sivu pieninäyttöisellä laitteella](https://moodle2.tut.fi/mod/resource/view.php?id=373491)
 
 
-**Palauta** tehtävän ratkaisuna tiedosto `tmnt.html`.
+**Palauta** tehtävän ratkaisuna tiedosto `tmnt.html`. Tiedostoon ei ole tarkoitus
+lisätä `style`-elementtejä eikä `style`-attribuutteja.
+
+### Vihjeitä ja lisätietoja
+
+Aiemmassa [Tehtävässä 3.1](../../osa3/tehtava31) ratkaistiin vastaavanlainen
+ongelma. Tuon tehtävän tapaan myös tässä tehtävän voi ratkaista askelittain.
+
+#### 1. Layout
+
+Liikkeelle voi lähteä [layoutista][layout] so. sijoittaa merkkaukseen Bootstrap:in
+gridin muodostavat luokat. Sarakkeista tässä voi käyttää "small"-versioita.
+*Kuvien 4 ja 5* peruslayoutin rakentamiseen tässä pärjättäneen luokilla
+`container`, `row`, `col-sm`, `col-sm-2`, `col-sm-4` ja `col-sm-8`.
+
+[layout]: https://getbootstrap.com/docs/4.0/layout/overview/
+
+{{spacer}} Kuva 4.
+[Sivun yläosa](https://moodle2.tut.fi/mod/resource/view.php?id=373522)  
+{{spacer}} Kuva 5.
+[Sivun alaosa](https://moodle2.tut.fi/mod/resource/view.php?id=373523)
+
+*Kuvien 1 ja 2* perusteella voidaan kuitenkin todeta, että sivua vieritettäessä,
+sivulla olevien ylä- ja alapalkkien tulisi pysyä paikoillaan. Tämä ongelma
+ratkennee elementtien sijaintia määrittelevien [apuluokkien][position] tuella
+(`fixed-top`, `fixed-bottom`). Esiin noussee kuitenkin uusi ongelma, joka
+hoituneen kayttäen tehtäväpohjassa määriteltyä luokkaa `jwo-body`. Sen myötä
+sivulle muodostunee myös taustakuvio.
+
+[position]: https://getbootstrap.com/docs/4.0/utilities/position/
+
+#### 2. Perusmuotoilu
+
+Tässä vaiheessa *Kuvissa 1 ja 2* esitettyä sivua voi lähteä tutkiskelemaan
+järjestyksessä vaikka ylhäältä alaspäin:
+
+1. sivun ylä- ja alapalkien kuva on keskitetty ja palkeissa on
+kuvaan sointuva tausta
+2. sivun pääotsikko on keskitetty ja sillä on varjostus
+3. sisätöalueen ympärillä on ohut pyöristetty raami
+4. sisältöalueen ylä- ja alapalkeissa on niissä oleviin kuviin sointuva tausta
+5. sisältöalueen teksti on valkoista lukuunottamatta kookasta lukua,
+joka esitetään punaisena
+6. toisin kuin koko sivun tausta, sisältöalueen tausta liikkuu sivua vieritettäessä
+7. sisältöalueella olevilla arvioilla on ohut pyöristetty raami
+8. arvioteksti ei ole aivan kiinni arvion raamista ja arvion raami ei ole aivan
+kiinni (esim.) sisältöalueen yläpalkissa
+9. arvioiden alapuolella oleva yhteenvetorivi on taustaltaan vihreä ja rivillä
+oleva teksti on keskitetty
+10. sisältöalueen yleiskuvaus-sarakkeen tausta on vihreä ja sen sisältämien
+otsikoiden alapuolinen teksti on hieman sisennetty
+11. yleiskuvaukseen liittyvä juliste on kiinni sarakkeen reunassa
+12. julisteen ja sen alapuolella olevan tekstin välissä on jonkin verran tyhjää
+tilaa
+
+{% comment %}
+
+Luokat
+1. text-center, jwo-page-banner
+2. text-center, jwo-text-shadow
+3. border, border-secondary, rounded
+4. jwo-content-banner
+5. text-white, jwo-huge-text
+6. jwo-content-background
+7. (vrt. kohta 3)
+8. mt-3, p-2
+9. jwo-backgroud, text-center
+10. jwo-backgroud, pl-3
+11. pl-0, pr-0
+
+{% endcomment %}
+
+Edellä luetellut ominaisuudet edellyttänevät seuraavien `styles.css` -tiedostossa
+määriteltyjen luokkien käyttöä:
+`jwo-page-banner`,
+`jwo-text-shadow`,
+`jwo-content-banner`,
+`jwo-huge-text`,
+`jwo-content-background`,
+`jwo-backgroud`.
+
+Seuraavia Bootstrap:in luokilla hoitunee sivulle sopivat [raamit][borders]:
+`border`, `border-secondary`, `rounded`. [Tekstiä][text] (ml. kuvat) voi asemoida
+esim. luokalla `text-center` ja [värittää][colors] esim. luokan `text-white` avulla.
+
+[borders]: https://getbootstrap.com/docs/4.0/utilities/borders/
+[text]: https://getbootstrap.com/docs/4.0/utilities/text/
+[colors]: https://getbootstrap.com/docs/4.0/utilities/colors/
+
+Elemettien välisiä [etäisyyksiä][boxmodel] voi säädellä marginaaleilla (*margin*)
+ja täytteellä (*padding*), joihin liittyen Bootstrap sisältää [joukon][spacing]
+"m"- ja "p"-luokkia. Esim. luokka `mt-3` viittaa kolmen yksikön suuruiseen
+elementin yläpuoliseen (*top*) marginaaliin ja `pl-3` kolmen yksikön suuruiseen
+vasemmanpuoleiseen (*left*) täytteeseen. Edellisten lisäksi tässä saatetaan
+tarvita vielä esim. seuraavia:  `p-2`,  `pl-0`, `pr-0`.
+
+[boxmodel]: https://www.w3schools.com/css/css_boxmodel.asp
+[spacing]: https://getbootstrap.com/docs/4.0/utilities/spacing/
 
 
-<br/>
+#### 3. Loppusäädöt
 
+
+Edellisten askelien suorittamisen jälkeen sivun pitäisi muistuttaa jo melko paljon
+*Kuvia 1 ja 2*, mutta joitakin pieniä eroavaisuksia lienee havaittavissa:
+
+1. arvioiden ja arvioijien ikonien rinnalla tulisi olla kaksi tekstiriviä yhden
+sijaan
+2. sisältöalueen oikeassa sarakkeessa oleva kuva ("juliste") tulisi skaalautua tietyyn
+pisteeseen asti, kun selainikkunan leveyttä muutetaan
+3. sisältöalueen ylä- ja alapalkeissa olevan tekstin tulisi olla lähempänä
+palkin alareunaa ja hieman lähempänä vasemmalla puolella olevaa kuvaa
+4. arvioiden alapuolella olevan yhteenvetorivin tulisi olla sisältöalueen
+alaosassa ala-palkin yläpuolella
 
 
 {% comment %}
 
-Laadi selaimessa toimiva ascii-animaatioiden katselusovellus. Tehtäväpohjassa on sovelluksen html/css-käyttöliittymä, jota täydennnetään JavaScript-koodilla halutun toiminnallisuuden aikaansaamiseksi. Pohja sisältää myös joukon valmiita animaatioita.
+Luokat
+1. float-left
+2. img-fluid
+3. d-flex, align-self-end/mt-auto (, pl-1)
+4. flex-column, d-flex,  mt-auto
 
-![Pyöräilijä](../img/bike.png "Pyöräilijä"){: style="display: block; margin: auto; margin-top: 10px;"}
+{% endcomment %}
 
-<small>Kuva 1.</small>
 
-Sovelluksen käyttöliittymässä on tekstialue, joka sisältää animaatioon kuuluvat "freimit", kun animaatio ei ole käynnissä. Freimit on erotettu toisistaan viisi `=`-merkkiä käsittävillä tekstiriveillä. Esim. *kuvassa 1* on esillä eräästä animaatiosta sen neljä ensimmäistä freimiä. Animaation voi valita tekstialueelle kuvan alareunassa olevalla *Animaatio* -valinnalla. Tekstialueen sisältöä voi muokata, kun animaatio ei ole käynnissä.
+Tällaisetkin säädöt hoituvat Bootstrap-luokilla (, jotka siis perustuvat
+CSS -tyylisääntöihin). Teksti saadaan kiertämään kuvaa asettamalla kuvalle
+[float][float] -luokka, tässä: `float-left`. [Kuva][images] taas skaalautuu
+luokan `img-fluid` avulla.
 
-Animaatio käynnistetään *Start*-paninikkeella, jolloin tekstialueelle ilmestyy animaation ensimmäinen freimi ja sitten pienen hetken kuluttua toinen jne. Viimeisen freimin jälkeen esitetään jälkeen ensimmäinen. Animaatio on käynnissä kunnes se pysäytetään *Stop*-näppäimellä. Tällöin tekstialue palaa tilaan, jossa se oli juuri ennen animaation käynnistämistä. Animaation ollessa käynnissä tekstialueen sisältöä ei voi muokata eikä alueelle voi valita toista animaatiota *Animaatio* -valinnalla (ko. valintakenttä ei ole ole aktiivinen). Myöskään animaation käynnistyspainike ei ota tällöin vastaan klikkauksia.
+Mm. elementtien vertikaalista asemointia voidaan toteuttaa CSS:n
+[Flexible Box Layout][mdn-flex] -moduulilla, jota [Bootstrap-luokat][flex]
+hyödyntävät. Tässä elementin siirto isä-elementin alareunaan voidaan
+hoitaa niin, että elementille asetetaan "automaattinen" ylämarginaali, `mt-auto`,
+ja isä-elementille asetetaan luokka `d-flex`. Tämän lisäksi *Yhteenvetorivin*
+siirto edellyttää isä-elementille luokkaa `flex-column`.
 
-Tekstialueella esitettävän sisällön kokoa (fontin koko) voidaan säätää *Koko* -valinnalla. Valittavissa olevat koot ovat *XS, S, M, L, XL* ja *XXL*, jotka vastaavat lukuarvoja *7pt, 10pt, 12pt, 16pt, 24pt* ja *32pt*. Animaation nopeutta (viive freimien vaihdon välillä) voidaan muuttaa radionapeilla  *Turbo, Normaali* ja *Matelu*. Näitä vastaavat arvot *50ms, 250ms* ja *1500ms*. Sekä kokoa että nopeutta voidaan muuttaa myös animaation ollessa käynnissä.
+[float]: https://getbootstrap.com/docs/4.0/utilities/float/
+[images]: https://getbootstrap.com/docs/4.0/content/imaages/
 
-Sovelluksen käynnistyksen yhteydessä animaatio *Blankko* on valittuna (tekstialue on tyhjä), koko on *M* ja nopeus *Normaali*. Animaatio ei ole käynnissä.
+[flex]: https://getbootstrap.com/docs/4.0/utilities/flex/
+[mdn-flex]: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout
 
 
-**Palauta** tehtävän ratkaisuna tiedosto `code.js`.
+Kun sivu näytää työaseman selaimessa halutunlaisesta, kannattaa vielä tarkistaa,
+miten se muotoutuu vaikka kännykän kokoisella näytöllä. Selaimissa on tähän
+liittyviä apuvälineitä, esim. Firefoxin web-työkalupaletista löytyvä
+*Responsive Design Mode*. *Kuvan 3* kuvaruutukaappaukset ovat tuosta työkalusta,
+kun tarkasteltavaksi laitteeksi on valittu eräs hieman yli 5 tuuman näytöllä
+varustetta mobiililaite.
 
-### Vihjeitä ja lisätietoja
-
-#### Pohjakoodista
-
-Valmiit animaatiot sijaitsevat tehtäväpohjan tiedostossa `anim/animaatiot.js` siten, että esim. *Kuvassa 1* esillä olevaan *Pyöräilijä* -animaatioon voidaan viitata seuraavasti: `ANIMATIONS['bike']`. Tehtävän ratkaisun muodostava koodi laaditaan tiedostoon `js/code.js`, joka sisältää käyttöliittymän elementtien tapahtumakäsittelijöiden rungot. Esim. animaation valintakentän osalta runko on seuraavanlainen:
-
-
-{% highlight javascript %}
-
-    document.getElementById('animaatio').onchange = function (e) {
-        console.log('animaatioksi valittiin ' + e.target.value);        
-    };
-
-{% endhighlight %}
-
-<small>Listaus 1.</small>
-
-
-Kun valintakentän arvo muuttuu, selaimen konsolille tulostuu ao. teksti. Tapahtumakäsittelijöinä toimivat funktiot saavat parametrikseen [Event][Event]-objektin (funktion parametri `e`), jonka [target][target]-ominaisuus viittaa tapahtuman aiheuttaneeseen käyttöliittymäelementtiin - tässä siis valintakenttään, jonka `value`-ominaisuudesta löytyy animaation tunnus.
-
-[Event]: https://developer.mozilla.org/en-US/docs/Web/API/Event
-[target]: https://developer.mozilla.org/en-US/docs/Web/API/Event/target
-
-Tehtäväpohjassa koodi on sisällytetty ns. JavaScript-moduuliin:
-
-{% highlight javascript %}
-
-(function () { //- moduuli alkaa -//
-
-    // ...
-
-})(); //- moduuli päättyy -//
-
-{% endhighlight %}
-
-<small>Listaus 2.</small>
-
-Moduuli on käytännössä funktio, joka on asetettu sulkumerkkien sisään. Funktion sisällä `var`-lauseella määritellyt muuttujat eivät näy moduulin ulkopuolelle. Jos funktio on sulkeissa, se suoritetaan ilman erillistä kutsua.
-
-#### setInterval-/clearInterval -funktiot
-
-Animaation toteutuksessa voidaan käyttää [setInterval][setInterval] -funktiota:
-
-[setInterval]: https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setInterval
-
-
-{% highlight javascript %}
-
-var intervalID = window.setInterval(callback, delay);
-
-{% endhighlight %}
-
-<small>Listaus 3.</small>
-
-
-*Listauksessa 3* `callback` on funktio, joka halutaan suorittaa toistuvasti, ja `delay` suorituskertojen välinen aika millisekunteina. Funktion toistuva suoritus voidaan keskeyttää [clearInterval][clearInterval]-funktiolla:
-
-[clearInterval]: https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/clearInterval
-
-
-{% highlight javascript %}
-
-window.clearInterval(intervalID);
-
-{% endhighlight %}
-
-<small>Listaus 4.</small>
-
-
-Seuraavassa on esimerkki *setInterval/clearInterval* -funktioiden käytöstä:
-
-
-{% highlight javascript %}
-
-var ajastin, numero;
-
-document.getElementById('startti').onclick = function () {
-    numero = 0;
-    ajastin = window.setInterval(vaihdaNumero, 500);
-};
-
-document.getElementById('stoppi').onclick = function () {
-    window.clearInterval(ajastin);
-};
-
-function vaihdaNumero() {
-    if (numero >= 9) { numero = 1; } else { numero++; }
-    document.getElementById('numero').value = numero;
-}
-
-{% endhighlight %}
-
-<small>Listaus 5.</small>
-
-
-*Listauksen 5* koodi askeltaa numeroita 1..9 tekstikentässä *startti*-painikkeen klikkauksen jälkeen. Numero vaihtuu 500ms välein. Askellus päättyy, kun klikataan *stoppi*-painiketta.
-
-
-#### Muita apuneuvoja
-
-Tässä tehtävässä [split][split]- ja [join][join] -metodit saattavat olla tarpeellisia animaatioiden käsittelyssä. Myös seuraavat käyttöliittymäelementtien ominaisuudet lienevät käyttökelpoisia: [checked][checked], [disabled][disabled], [readOnly][readOnly], [selectedIndex][selectedIndex] ja [style][style].fontSize.
-
-Tehtävän [lähteenä käytetty spesifikaatio][speksi] löytyy Moodlesta.
-
-[speksi]: https://moodle2.tut.fi/mod/resource/view.php?id=319586
-
-[split]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split
-[join]:  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join
-
-[checked]: https://www.w3schools.com/jsref/prop_checkbox_checked.asp
-[disabled]: https://www.w3schools.com/jsref/prop_pushbutton_disabled.asp
-[readOnly]: https://www.w3schools.com/jsref/prop_text_readonly.asp
-[selectedIndex]: https://www.w3schools.com/jsref/prop_select_selectedindex.asp
-[style]: https://www.w3schools.com/jsref/prop_html_style.asp
-
-
-<br/><small>
-Tehtävän lähde: Homework Assignment - ASCIImation.<br/>
-[Web Programming][cse154], University of Washington, Computer Science & Engineering.<br/>
-Copyright © Marty Stepp / Jessica Miller, licensed under Creative Commons Attribution 2.5 License.
-</small>
 
 <br/>
 
-[cse154]:https://courses.cs.washington.edu/courses/cse154/
+<small>
+Tehtävän lähde: Homeworks Movie Review & Movie Review Part Deux.<br/>
+[Web Programming][cse154], University of Washington, Computer Science & Engineering.<br/>
+Copyright © Marty Stepp / Jessica Miller, licensed under Creative Commons Attribution 2.5 License.<br/>
+(alkuperäistä tehtävää muokattu)
+</small>
+
+[cse154]: https://courses.cs.washington.edu/courses/cse154/
 
 
-{% endcomment %}
+<br/>

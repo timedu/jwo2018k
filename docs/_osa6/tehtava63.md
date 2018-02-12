@@ -6,10 +6,50 @@ exercise_discussion_id: # 94969
 exercise_upload_id: # 373510
 no_review: 1
 kesken: 1
-julkaisu: 12.2.2018
+julkaisu: 13.2.2018
 ---
 
-Tehtävä 6.3
+Muodosta hyödyntäen [edellisen tehtävän](../tehtava62) ratkaisua
+[tehtäväpohjaan][pohja][^pohja] template siten, että pyynnöllä polkuun `/tmnt`
+sovellus tuottaa selaimeen *Kuvien 1 ja 2* mukaisen sivun ja  pyynnöllä polkuun
+`/princessbride` *Kuvien 3 ja 4* mukaisen sivun.
+
+[pohja]: #
+[^pohja]: Tämän tehtävän [pohjakoodi][pohja] on Moodlessa.
+
+{% assign spacer = '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' %}
+
+{{spacer}} Kuva 1.
+[TMNT - sivun yläosa](https://moodle2.tut.fi/mod/resource/view.php?id=373489)   
+{{spacer}} Kuva 2.
+[TMNT - sivun alaosa](https://moodle2.tut.fi/mod/resource/view.php?id=373490)   
+{{spacer}} Kuva 3.
+[Princess Bride - sivun yläosa](https://moodle2.tut.fi/mod/resource/view.php?id=373613)  
+{{spacer}} Kuva 4.
+[Princess Bride - sivun alaosa](https://moodle2.tut.fi/mod/resource/view.php?id=373614)
+
+
+**Palauta** tehtävän ratkaisuna zip-arkisto `partials`-hakemiston sisällöstä.
+
+### Vihjeitä ja lisätietoja
+
+...
+
+<br/>
+
+<small>
+Tehtävän lähde: Homeworks Movie Review & Movie Review Part Deux.<br/>
+[Web Programming][cse154], University of Washington, Computer Science & Engineering.<br/>
+Copyright © Marty Stepp / Jessica Miller, licensed under Creative Commons Attribution 2.5 License.<br/>
+(alkuperäistä tehtävää muokattu)
+</small>
+
+[cse154]: https://courses.cs.washington.edu/courses/cse154/
+
+<br/>
+
+
+
 
 
 {% comment %}

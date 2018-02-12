@@ -1,52 +1,49 @@
 ---
 layout: exercise_page
 title: "Tehtävä 6.2: Elokuva-arviot, vaihe 2"
-exercise_template_name: #
-exercise_discussion_id: # 94968
-exercise_upload_id: # 373509
-no_review: 1
-kesken: 1
-julkaisu: 12.2.2018
+exercise_template_name: # (Moodlessa)
+exercise_discussion_id: 94968
+exercise_upload_id: 373509
+modified_at: 12.2.2018
 ---
 
+[Tehtäväpohjassa][pohja][^pohja] on web-sovellus, joka tuottaa selaimeen *Kuvan 1*
+mukaisen sivun, kun tehdään pyyntö sovelluksen juureen (`http://localhost:3000/`).
 
-Tehtävä 6.2
+[pohja]: https://moodle2.tut.fi/mod/resource/view.php?id=373612
+[^pohja]: Tämän tehtävän [pohjakoodi][pohja] on Moodlessa.
 
-{% comment %}
+![Templaten runko](../img/template-skeleton.png "Templaten runko"){: style="display: block; margin: auto; margin-top: 10px; width: 600px;"}
 
-Täydennä [tehtävän 6.1](../tehtava61) ratkaisua siten, että animaation saa pyörimään myös  taasepäin, sekä niin, että tekstialueen fontin koon voi antaa ennalta määriteltyjen arvojen ohella myös suoraan lukuarvona.
+<small>Kuva 1. Templaten runko.</small>
 
+Pohjakoodissa on monesta tiedostosta muodostuva template (*Kuva 2*).  Tiedostoista
+kuvassa harmaalla esitetyt ovat pohjassa valmiina.
 
-![Ohjaimet](../img/ohjaimet.png "Ohjaimet"){: style="display: block; margin: auto; margin-top: 10px;"}
+![Templaten rakenne](../img/template-structure.png "Templaten rakenne"){: style="display: block; margin: auto; margin-top: 10px; width: 600px;"}
 
-<small>Kuva 1.</small>
+<small>Kuva 2. Templaten rakenne.</small>
 
+Muodosta[^muodosta] tehtäväpohjan tiedostoihin, jotka *Kuvassa 2* on esitetty valkoisina,
+merkkaus siten, että tehtäessä pyyntö sovelluksen juureen, selaimeen ilmestyy
+[edellisen tehtävän](../tehtava62) ratkaisua vastaava sivu ([yläosa][ylaosa],
+[alaosa][alaosa]).
 
-Tehtäväpohjan merkkaukseen on animaation suunnan muutosta varten lisätty *Peruutus* -valintaruutu (*Kuva 1*). *Koko* -valintakentässä on nyt vaihtoehto *muu*, jonka valinta tuo esiin ikkunan, johon tekstialueen fontin koon voi antaa lukuarvona (*Kuva 2*). Sekä animaation koon että suunnan voi vaihtaa animaation ollessa käynnissä.
+[ylaosa]: https://moodle2.tut.fi/mod/resource/view.php?id=373489
+[alaosa]: https://moodle2.tut.fi/mod/resource/view.php?id=373490
+[^muodosta]: Tarvittava merkkaus löytyy [edellisen tehtävän](../tehtava62) ratkaisusta.
 
-
-![Koko-prompt](../img/custom-koko.png "Koko-prompt"){: style="display: block; margin-top: 10px; width: 250px;"}
-
-<small>Kuva 2.</small>
-
-*Kuvan 2* esittämän ikkunan tuottamiseen voi käyttää [prompt][prompt] -funktiota. Tehtävän [lähteenä käytetty spesifikaatio][speksi] löytyy Moodlesta.
-
-[prompt]: https://www.w3schools.com/jsref/met_win_prompt.asp
-[speksi]: https://moodle2.tut.fi/mod/resource/view.php?id=319587
-
-
-**Palauta** tehtävän ratkaisuna tiedosto `code.js`.
-
-
-<br/><small>
-Tehtävän lähde: Homework Assignment - ASCIImation, Extra Features.<br/>
-[Web Programming][cse154], University of Washington, Computer Science & Engineering.<br/>
-Copyright © Marty Stepp / Jessica Miller, licensed under Creative Commons Attribution 2.5 License.
-</small>
+**Palauta** tehtävän ratkaisuna zip-arkisto `partials`-hakemiston sisällöstä.
 
 <br/>
 
-[cse154]:https://courses.cs.washington.edu/courses/cse154/
+<small>
+Tehtävän lähde: Homeworks Movie Review & Movie Review Part Deux.<br/>
+[Web Programming][cse154], University of Washington, Computer Science & Engineering.<br/>
+Copyright © Marty Stepp / Jessica Miller, licensed under Creative Commons Attribution 2.5 License.<br/>
+(alkuperäistä tehtävää muokattu)
+</small>
 
+[cse154]: https://courses.cs.washington.edu/courses/cse154/
 
-{% endcomment %}
+<br/>

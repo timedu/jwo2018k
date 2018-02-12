@@ -1,9 +1,9 @@
 ---
 layout: exercise_page
 title: "Tehtävä 6.3: Elokuva-arviot, vaihe 3"
-exercise_template_name: # W6E03.LiukupalapeliVaihe1
-exercise_discussion_id:
-exercise_upload_id:
+exercise_template_name: #
+exercise_discussion_id: # 94969
+exercise_upload_id: # 373510
 no_review: 1
 kesken: 1
 julkaisu: 12.2.2018

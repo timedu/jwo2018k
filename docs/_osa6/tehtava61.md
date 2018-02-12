@@ -1,18 +1,21 @@
 ---
 layout: exercise_page
 title: "Tehtävä 6.1: Elokuva-arviot, vaihe 1"
-exercise_template_name:
-exercise_discussion_id:
-exercise_upload_id:
-no_review: 1
+exercise_template_name: # (Moodlessa)
+exercise_discussion_id: 94967
+exercise_upload_id: 373508
 kesken: 1
-julkaisu: 12.2.2018
+julkaisu: täsmennettynä 12.2.2018
 modified_at: 12.2.2018
 ---
 
-Lisää tehtäväpohjan tiedostoon `tmnt.html` tarvittavat [Bootstrap][Bootstrap]-luokat
+Lisää [tehtäväpohjan][pohja][^pohja] tiedostoon `tmnt.html` tarvittavat [Bootstrap][Bootstrap]-luokat
 sekä pohjan tiedostossa `css/styles.css` määritellyt css-luokat siten, että
 sivun ulkoasu selaimessa on *Kuvien 1-3* mukainen.
+
+[pohja]: https://moodle2.tut.fi/mod/resource/view.php?id=373505
+[^pohja]: Tämän tehtävän [pohjakoodi][pohja] on Moodlessa.
+
 
 [Bootstrap]: https://getbootstrap.com
 
@@ -26,7 +29,11 @@ Kuva 3.
 [Sivu pieninäyttöisellä laitteella](https://moodle2.tut.fi/mod/resource/view.php?id=373491)
 
 
-**Palauta** tehtävän ratkaisuna tiedosto `index.html`.
+**Palauta** tehtävän ratkaisuna tiedosto `tmnt.html`.
+
+
+<br/>
+
 
 
 {% comment %}

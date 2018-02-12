@@ -1,9 +1,9 @@
 ---
 layout: exercise_page
 title: "Tehtävä 6.2: Elokuva-arviot, vaihe 2"
-exercise_template_name:
-exercise_discussion_id:
-exercise_upload_id:
+exercise_template_name: #
+exercise_discussion_id: # 94968
+exercise_upload_id: # 373509
 no_review: 1
 kesken: 1
 julkaisu: 12.2.2018

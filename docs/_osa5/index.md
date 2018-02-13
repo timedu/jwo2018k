@@ -2,8 +2,8 @@
 layout: collection_index
 permalink: /:collection/index.html
 kesken: 1
-julkaisu: täsmennettynä myöhemmin
-modified_at: 3.2.2018
+julkaisu: hieman täydennettynä myöhemmin
+modified_at: 13.2.2018
 ---
 
 
@@ -19,7 +19,8 @@ Kuudes tehtävä sisältää ohjelmointitehtäviin läheisesti liityviä monival
 
 {% include exercises_list.md %}
 
-Ratkaisut tehtäviin tulee palauttaa Moodleen viimeistään  **14.2.2018 klo 23:55**
+Ratkaisut tehtäviin tulee palauttaa Moodleen viimeistään <strike>14.2.2018</strike>
+**16.2.2018 klo 23:55**
 ("Moodlen aikaa"). Tehtäväkuvausten yhteydessä on linkit ao. palautustyökaluihin.
 
 

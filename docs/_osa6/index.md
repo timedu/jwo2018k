@@ -13,6 +13,9 @@ julkaisu: täsmennettynä tehtäväkuvausten julkaisemisen jälkeen
 {% include exercises_list.md %}
 
 
+Ratkaisut tehtäviin tulee palauttaa Moodleen viimeistään
+**23.2.2018 klo 23:55** ("Moodlen aikaa").
+Tehtäväkuvausten yhteydessä on linkit ao. palautustyökaluihin.
 
 
 {% comment %}

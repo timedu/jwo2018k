@@ -14,7 +14,7 @@ Muodosta hyödyntäen [edellisen tehtävän](../tehtava62) ratkaisua
 sovellus tuottaa selaimeen *Kuvien 1 ja 2* mukaisen sivun ja  pyynnöllä polkuun
 `/princessbride` *Kuvien 3 ja 4* mukaisen sivun.
 
-[pohja]: #
+[pohja]: https://moodle2.tut.fi/mod/resource/view.php?id=373624
 [^pohja]: Tämän tehtävän [pohjakoodi][pohja] on Moodlessa.
 
 {% assign spacer = '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' %}

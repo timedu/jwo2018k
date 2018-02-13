@@ -28,6 +28,50 @@ sovellus tuottaa selaimeen *Kuvien 1 ja 2* mukaisen sivun ja  pyynnöllä polkuu
 {{spacer}} Kuva 4.
 [Princess Bride - sivun alaosa](https://moodle2.tut.fi/mod/resource/view.php?id=373614)
 
+Tehtäväpohjassa oleva runko on [edellisen tehtävän](../tehtava62) vastaavaan
+verrattuna hivenen toisenlainen (*Kuva 5*). Pyynnön polussa olevaa parametria
+vastaava elokuvan tunniste on sivun otsikko-osassa ja arvioita esittäviä
+template-moduuleja tässä on ainoastaan yksi edellisen kahden sijaan.
+
+![Templaten runko](../img/template-skeleton-2.png "Templaten runko"){: style="display: block; margin: auto; margin-top: 10px; width: 600px;"}
+
+<small>Kuva 5. Templaten runko.</small>
+
+Tehtäväpohjassa on objekti `movies`, joka sisältää neljän elokuvan
+(`mortalkombat`, `princessbride`, `tmnt`, `tmnt2`) arvioinnit. Sovellus toimii
+niin, että pyynnön parametri määrää, mihin elokuvaan liittyvä arvioitisivu
+palautetaan selaimelle. Pyyntö käsitellään niin, että ao. elokuvaan liittyvä
+`movies`-objektin ominaisuus (siis tämäkin objekti) välitetään templatelle:
+
+{% highlight js %}
+
+res.render('movie-review-page', {
+    movie: movies[req.params.id]
+});
+
+{% endhighlight %}
+
+
+<small>Listaus 1. Elokuvan tietojen välitys templatelle.</small>
+
+
+Elokuviin liittyvät tiedot löytyvät tehtäväpohjan `data`-hakemistosta
+`json`-muotoisina, esim.
+
+~~~
+{
+    "id": "tmnt",
+    "name": "TMNT",
+    "year": "2007",
+    "...": "..."
+}
+~~~
+
+<small>Listaus 2. Ote tiedostosta *data/tmnt.json*</small>
+
+...
+
+
 
 **Palauta** tehtävän ratkaisuna zip-arkisto `partials`-hakemiston sisällöstä.
 

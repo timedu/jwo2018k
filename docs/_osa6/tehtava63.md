@@ -1,11 +1,9 @@
 ---
 layout: exercise_page
 title: "Tehtävä 6.3: Elokuva-arviot, vaihe 3 (3p)"
-exercise_template_name: #
+exercise_template_name: # (Moodlessa)
 exercise_discussion_id: 94969
 exercise_upload_id: 373510
-julkaisu: täydennettynä 14.2.2018
-kesken: 1
 modified_at: 13.2.2018
 ---
 

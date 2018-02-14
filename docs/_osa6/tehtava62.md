@@ -1,6 +1,6 @@
 ---
 layout: exercise_page
-title: "Tehtävä 6.2: Elokuva-arviot, vaihe 2"
+title: "Tehtävä 6.2: Elokuva-arviot, vaihe 2 (3p)"
 exercise_template_name: # (Moodlessa)
 exercise_discussion_id: 94968
 exercise_upload_id: 373509

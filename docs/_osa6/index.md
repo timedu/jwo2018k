@@ -1,18 +1,32 @@
 ---
 layout: collection_index
 permalink: /:collection/index.html
-kesken: 1
-julkaisu: täsmennettynä tehtäväkuvausten julkaisemisen jälkeen
+modified_at: 15.2.2018
 ---
 
-
+Tämän osan tehtävissä törmätään jo aiemmin esillä olleisiin asioihin
+kuten sivun muotoilu *Bootstrap*-kirjaston luokkien avulla ja selaimessa olevan
+dokumenttipuun manipulointi *jQuery*:llä ([Osa 3](../osa3)) sekä
+*Haldlebars*-kirjaston käyttämän sivupohjan rakentaminen ([Osa 4](../osa4)).
 
 ### Tehtävät
 
+Osan viidestä tehtävästä kolmessa ensimmäisessä rakennetaan vaiheittain
+elokuva-arvostelujen esittämiseen tarkoitettu sivupohja, *template*, jota
+palvelinpäässä toimiva sovellus hyödyntää. Jälkimmäisissä tehtävistä
+rakennetaan kahdessa vaiheessa selaimessa toimiva liukupalapeli.
 
 {% include exercises_list.md %}
 
-
+[Tehtävän 6.1](tehtava61) lähtökohtana on merkkaus, jota täydennetään
+Bootstrap-luokilla ja muutamalla sovelluksessa määritellyllä CSS-luokalla
+halutun ulkoasun saavuttamiseksi. [Tehtävässä 6.2](tehtava62) edellä täydennetyn
+tiedoston sisältö jäsennetään uudelleen monesta tiedostosta koostuvaksi
+sivupohjaksi, jota [Tehtävässä 6.3](tehtava63) kehitetään edelleen siten, että
+sen avulla voidaan tuottaa usean elokuvan arvostelusivut.
+Tehtävissä [6.4](tehtava64) ja [6.5](tehtava65) laadittavan liukupalapelin
+rakentaminen on vaiheistettu niin, että ensin tuotetaan sivulle pelissä tarvittavat
+elementit ja sitten palojen sekoittamiseen ja siirtämiseen liittyvä toiminnallisuus.
 
 Ratkaisut tehtäviin tulee palauttaa Moodleen viimeistään
 **23.2.2018 klo 23:55** ("Moodlen aikaa").

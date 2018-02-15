@@ -4,7 +4,7 @@ title: "Tehtävä 6.3: Elokuva-arviot, vaihe 3 (3p)"
 exercise_template_name: # (Moodlessa)
 exercise_discussion_id: 94969
 exercise_upload_id: 373510
-modified_at: 13.2.2018
+modified_at: 15.2.2018
 ---
 
 Muodosta [edellisen tehtävän](../tehtava62) ratkaisua hyödyntäen
@@ -228,7 +228,8 @@ Jos `object` on esim. `{nimi: "Homer", osoite: "Springfield"}`, niin `nimi` ja
 `osoite` ovat vuorollaan `@key`, ja `"Homer"` ja `"Springfield"` ovat `this`.
 
 `movie.overview`-objektin tietyt arvot sisältävät html-tageja. Viittaus
-{% raw %}`{{this}}`{% endraw %} poistaa arvosta kaikki tagit. Jos halutaa, että tagit säilyvät, on
+{% raw %}`{{this}}`{% endraw %} poistaa arvosta kaikki tagit. Jos halutaan
+(kuten tässä), että tagit säilyvät, on
 käytettävä hivenen erilaista viittausta: {% raw %}`{{{this}}}`{% endraw %}.
 
 

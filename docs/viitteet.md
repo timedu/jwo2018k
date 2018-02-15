@@ -97,6 +97,8 @@ modified_at: 27.1.2018
 * <https://stackify.com/popular-programming-languages-2018/>
 * <https://fullstack-hy.github.io>
 * <https://ohsiha.github.io>
+* <https://www.gitbook.com/book/gitbookio/javascript/details>
+* <https://frontendmasters.com/books/front-end-handbook/2017/learning/javascript.html>
 
 {% comment %}
 

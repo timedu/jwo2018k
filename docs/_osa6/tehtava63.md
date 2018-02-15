@@ -101,7 +101,136 @@ kohdassa.
 
 ### Vihjeitä ja lisätietoja
 
+#### heading-row, review-summary-col
+
+Templaten nämä osat ratkeavat käyttäen ohjenuorana edellä olevaa *Listausta 2*
+ja siihen viittaavaa tekstiä.
+
+#### content-banner-row
+
+Tähän liittyvä ongelma ei ole kokonaisuudessaa aivan yhtä suoraviivainen kuin
+edellä. Sisältöosan ylä- ja alapalkkissa oleva kuva riippuu elokuvan
+kokonaisarvosanasta `movie.score`:
+
+{% highlight html %}
+
+<img src="./img/rottenlarge.png" alt="Rotten" class="align-bottom"/>
+
+{% endhighlight %}
+
+<small>Listaus 3. Palkin kuva, kun *movie.score < 60*.</small>
+
+{% highlight html %}
+
+<img src="./img/freshlarge.png" alt="Fresh" class="align-bottom"/>
+
+{% endhighlight %}
+
+<small>Listaus 4. Palkin kuva, kun *movie.score >= 60*.</small>
+
+Ongelman voisi ratkaista välittämällä sivupohjalle kuvatiedoston nimen ja
+*alt*-tekstin. Tässä voidaan kuitenkin hyödyntää "sivupohjamoottorin"
+käyttöön tiedostossa `app.js` määriteltyjä apufuntioita (*helper*),
+`scoreStr` ja `capFirst`, jotka tuottavat tässä tarvittavat merkkijonot
+elokuvan kokonaisarvosanan perusteella.
+
+[helpers]: http://handlebarsjs.com/#helpers
+
+Seuraavassa on [Handlebarsin sivustolta][helpers] poimittu esimerkki *helperin*
+käytöstä:
+
+{% highlight html %}
+{% raw %}
+
+<div class="post">
+  <h1>By {{fullName author}}</h1>
+  ...
+</div>
+
+{% endraw %}
+{% endhighlight %}
+
+<small>Listaus 5. </small>
+
+*Listauksessa 5* `fullName` on helper-funktio ja `author` sille annettava
+parametri. Funktion paluuarvo voidaan antaa myös toisen funktion parametriksi,
+esim:
+
+{% highlight html %}
+{% raw %}
+
+<div class="post">
+  <h1>By {{ upperCase (fullName author) }}</h1>
+  ...
+</div>
+
+{% endraw %}
+{% endhighlight %}
+
+<small>Listaus 6. </small>
+
+#### review-col
+
+Elokuva-arviot löytyvät taulukosta `movie.reviews` ja niiden saaminen selaimelle
+palautettavalle sivulle edellyttää silmukkarakenteen käyttöä templatessa.
+`each`-silmukan käytöstä on esimerkkejä aikaisempien tehtävien pohjissa  - esim.
+*W4E05.Tilaukset*: `tilausluettelo.html`; *W5E03.VatsList*: `messages.html`.
+
+Yksi ongelma tässä kuitenkin on se, että arviot tulisi jakaa kahteen sarakkeeseen. Tätä
+varten tehtäväpohjassa on "helpperi" `colSlice` (ks. `app.js`), joka templatessa olevalla
+kutsulla `colSlice movie.reviews "left"` palauttaa vasempaan sarakkeeseen
+tulevat arviot ja (esim.) kutsulla  `colSlice movie.reviews "right"`
+oikeanpuoleiseen sarakkeeseen tulevat arviot.
+
+`review-col.html` otetaan pohjakoodissa templaterakennelmaan mukaan seuraavasti:
+
+{% highlight html %}
+{% raw %}
 ...
+<div class="row">
+    {{> review-col column='left'  }}
+    {{> review-col column='right' }}
+</div>
+...
+{% endraw %}
+{% endhighlight %}
+
+<small>Listaus 7. </small>
+
+Tässä siis `review-col` saa käyttöönsä muuttujan `column`, jonka arvo ohjaa
+arvioiden tulostumista sarakkeisiin.
+
+Arvioihin liittyvän kuvakkeen yhteydessä saatetaan tarvita pohjan määrittelemiä
+`lowerCase`- ja `capFirst`-helppereitä.
+
+#### overview-col
+
+Sivun yleiskuvaus-sarakkeeseen tuotetaan sisältö objektista `movie.overview`,
+jonka rakenne voi olla erilainen eri elokuvilla. Myös tässä voidaan käyttää
+`each`-silmukkarakennetta [Handlebars-sivustolta][iteration] poimitun esimerkin mukaan:
+
+[iteration]: http://handlebarsjs.com/builtin_helpers.html#iteration
+
+
+{% highlight html %}
+{% raw %}
+
+{{#each object}}
+  {{@key}}: {{this}}
+{{/each}}
+
+{% endraw %}
+{% endhighlight %}
+
+<small>Listaus 8. </small>
+
+Jos `object` on esim. `{nimi: "Homer", osoite: "Springfield"}`, niin `nimi` ja
+`osoite` ovat vuorollaan `@key`, ja `"Homer"` ja `"Springfield"` ovat `this`.
+
+`movie.overview`-objektin tietyt arvot sisältävät html-tageja. Viittaus
+{% raw %}`{{this}}`{% endraw %} poistaa arvosta kaikki tagit. Jos halutaa, että tagit säilyvät, on
+käytettävä hivenen erilaista viittausta: {% raw %}`{{{this}}}`{% endraw %}.
+
 
 <br/>
 

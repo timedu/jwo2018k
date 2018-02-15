@@ -7,6 +7,8 @@ kesken: 1
 JWO2018k / Osa 7
 
 
+{% include exercises_list.md %}
+
 
 {% comment %}
 

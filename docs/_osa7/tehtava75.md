@@ -6,6 +6,7 @@ exercise_discussion_id:
 exercise_upload_id:
 kesken: 1
 no_review: 1
+julkaisu: 19.2.2018
 ---
 
 Tehtävä 7.5

@@ -2,6 +2,7 @@
 layout: collection_index
 permalink: /:collection/index.html
 kesken: 1
+julkaisu: 19.2.2018
 ---
 
 JWO2018k / Osa 7

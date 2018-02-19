@@ -62,10 +62,13 @@ Tietokantarajapinta näkyy tunnisteessa `db`. Tietokanta tauluineen muodostuu
 sovelluksen käynnistyksen yhteydessä, jos se aiemmin ei ole ollut olemassa
 (`taskit-db.js`). Kirjautuneen käyttäjän nimi löytyy pyynnöstä: `req.session['login-user']`.
 
+Sovelluksen selainpäähän valmiiksi rakennettu
+kirjautuminen (`code-login.js`) käynnistää tehtävien haun selainpäähän.
+
 Selainpään ratkaisua tukee moduulissa `code-dom.js` määritelty funktio
 `createTaskElement`, joka muodostaa sivulle parametriensa määrittelemän
-tehtävä -elementin. Sovelluksen selainpäähän valmiiksi rakennettu
-kirjautuminen (`code-login.js`) käynnistää tehtävien haun selainpäähän.
+tehtävä -elementin. Jos palvelimen palauttaman objektin `err`-ominaisuus
+sisältää todeksi tulkittavan arvon, se tulostetaan selaimen konsolille.
 
 
 **Palauta** tehtävän ratkaisuna tiedostot `code-select.js` ja

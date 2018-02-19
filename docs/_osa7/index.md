@@ -5,10 +5,19 @@ kesken: 1
 julkaisu: 19.2.2018
 ---
 
-JWO2018k / Osa 7
+
+
+![Tehtävälista](./img/taskit.png "Tehtävälista"){: style="display: block;  margin: auto; margin-top: 10px; width: 500px;"}
+
+<small>Kuva 1.</small>
+
+
+### Tehtävät
 
 
 {% include exercises_list.md %}
+
+
 
 
 {% comment %}

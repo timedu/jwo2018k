@@ -1,9 +1,9 @@
 ---
 layout: exercise_page
-title: "Tehtävä 7.3: Tehtävälista, vaihe 3 (3p)"
-exercise_template_name:
-exercise_discussion_id:
-exercise_upload_id:
+title: "Tehtävä 7.3: Tehtävälista, lisäys (3p)"
+exercise_template_name: #
+exercise_discussion_id: # 95784
+exercise_upload_id: # 374788
 kesken: 1
 no_review: 1
 julkaisu: 19.2.2018

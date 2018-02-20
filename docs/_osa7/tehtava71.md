@@ -4,7 +4,7 @@ title: "Tehtävä 7.1: Tehtävälista, runko (3p)"
 exercise_template_name: W7E01.TaskIT
 exercise_discussion_id: 95782
 exercise_upload_id: 374786
-modified_at: 19.2.2018
+modified_at: 20.2.2018
 ---
 
 Pohjakoodissa on *Tehtävälista* -sovelluksen runko, josta puuttuu palvelinpäässä
@@ -75,7 +75,7 @@ $.ajax({
   data: { name: "John", location: "Boston" }
 }).done(function( msg ) {
     alert( "Data Saved: " + msg );
-);
+});
 
 {% endhighlight %}
 

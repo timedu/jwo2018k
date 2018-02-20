@@ -66,7 +66,7 @@ kuvaan sointuva tausta
 2. sivun pääotsikko on keskitetty ja sillä on varjostus
 3. sisätöalueen ympärillä on ohut pyöristetty raami
 4. sisältöalueen ylä- ja alapalkeissa on niissä oleviin kuviin sointuva tausta
-5. sisältöalueen teksti on valkoista lukuunottamatta kookasta lukua,
+5. sisältöalueen ylä- ja alapalkeissa teksti on valkoista lukuunottamatta kookasta lukua,
 joka esitetään punaisena
 6. toisin kuin koko sivun tausta, sisältöalueen tausta liikkuu sivua vieritettäessä
 7. sisältöalueella olevilla arvioilla on ohut pyöristetty raami

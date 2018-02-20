@@ -27,8 +27,8 @@ tai tulostaa ao. tilanteessa konsolille vasteessa olevan virheen.
 Palvelipään moduulissa `taskit-insert.js` oleva funktio `addNewTask` käsittelee
 pyynnön tallettaen uuden tehtävän tietokantaan. Taulun `owner`-sarakkeen
 arvoksi tulee istunnosta löytyvä kirjautuneen käyttäjä nimi
-(`req.session['user-name']`). Funktio tuottaa pyyntöön seuraavan muotoisen
-vasteen:
+(`req.session['user-name']`) ja `status`-sarakkeen arvoksi "todo".
+Funktio tuottaa pyyntöön seuraavan muotoisen vasteen:
 
 {% highlight javascript  %}
 

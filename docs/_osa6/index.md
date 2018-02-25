@@ -1,7 +1,7 @@
 ---
 layout: collection_index
 permalink: /:collection/index.html
-modified_at: 15.2.2018
+modified_at: 25.2.2018
 ---
 
 Tämän osan tehtävissä törmätään jo aiemmin esillä olleisiin asioihin
@@ -28,9 +28,20 @@ Tehtävissä [6.4](tehtava64) ja [6.5](tehtava65) laadittavan liukupalapelin
 rakentaminen on vaiheistettu niin, että ensin tuotetaan sivulle pelissä tarvittavat
 elementit ja sitten palojen sekoittamiseen ja siirtämiseen liittyvä toiminnallisuus.
 
-Ratkaisut tehtäviin tulee palauttaa Moodleen viimeistään
-**23.2.2018 klo 23:55** ("Moodlen aikaa").
+~~Ratkaisut tehtäviin tulee palauttaa Moodleen viimeistään
+23.2.2018 klo 23:55 ("Moodlen aikaa").~~
+
 Tehtäväkuvausten yhteydessä on linkit ao. palautustyökaluihin.
+Tämän osan tehtäviin ei ole asetettu määräaikaa, mutta tenttiin[^1]
+osallistumisen jälkeen palautettuja[^2] suorituksia ei enää huomioida.
+
+[^1]: Ensimmäinen varsinaiseen tenttiin liittyvä osallistumiskerta.
+
+[^2]: Uusi palautus peittää alleen edellisen, joten tenttiin osallistumisen jälkeen tehty uusintapalautus aiheuttaa myös aiempien palautusten huomiotta jättämisen.
+
+<br/>
+
+
 
 
 {% comment %}

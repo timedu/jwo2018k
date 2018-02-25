@@ -1,6 +1,7 @@
 ---
 layout: collection_index
 permalink: /:collection/index.html
+modified_at: 25.2.2018
 ---
 
 Tämän osan muodostaa tehtäväsarja, jossa rakennetaan tietokantapohjainen
@@ -39,3 +40,14 @@ lisätä uusia tehtäviä. [Tehtävässä 7.4](tehtava74) toiminnallisuutta laaj
 niin, että selaimen esittämien tehtävien statusta (*ei tehty/tehty*) voidaan
 muuttaa. [Tehtävän 7.5](tehtava75) ratkaisun toiminnolla tietokannasta voidaan
 poistaa kirjautuneen käyttäjän valmiiksi merkityt tehtävät.
+
+
+Tehtäväkuvausten yhteydessä on linkit ao. palautustyökaluihin.
+Tämän osan tehtäviin ei ole asetettu määräaikaa, mutta tenttiin[^1]
+osallistumisen jälkeen palautettuja[^2] suorituksia ei enää huomioida.
+
+[^1]: Ensimmäinen varsinaiseen tenttiin liittyvä osallistumiskerta.
+
+[^2]: Uusi palautus peittää alleen edellisen, joten tenttiin osallistumisen jälkeen tehty uusintapalautus aiheuttaa myös aiempien palautusten huomiotta jättämisen.
+
+<br/>
